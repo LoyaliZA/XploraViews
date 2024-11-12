@@ -1,0 +1,175 @@
+.button-yellow {
+    background-color: #e2b223;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.button-yellow:hover {
+    transform: translateY(-2px);
+}
+
+/* Boton naranja con borde (Guardar alojamiento) */
+
+.button-orange-outline {
+    background-color: transparent;
+    color: #F06D35;
+    border: 2px solid #F06D35;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.button-orange-outline:hover {
+    transform: translateY(-2px);
+}
+
+/* Boton blanco con borde gris (cuentas externas) */
+
+.button-white-outline {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s;
+}
+
+.button-white-outline:hover {
+    transform: translateY(-2px);
+}
+
+/* Botón naranja sólido (Continuar) */
+.button-orange-solid {
+    background-color: #F06D35;
+    color: #fff;
+    border: none;
+    border-radius: 12px; /* Ajuste de bordes menos redondeados */
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.button-orange-solid:hover {
+    transform: translateY(-2px);
+}
+
+/* Contenedor del botón */
+.button-container {
+    max-width: 100%; /* El contenedor ocupa el ancho completo disponible */
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centra el botón dentro del contenedor */
+}
+
+/* Botón ajustado al contenedor */
+.button-full-width {
+    width: auto; /* Ancho automático para que se ajuste al contenido */
+    max-width: 100%; /* Se adapta a su contenedor */
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+/* Estilos para el header */
+.navbar-header {
+    background-color: #fdf6e3; /* Fondo claro */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-title {
+    font-size: 18px;
+    color: #f15b2a;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.navbar-links {
+    color: #333;
+    font-weight: bold;
+    margin-right: 20px; /* Separación entre enlaces */
+}
+.uk-icon-button {
+    color: #333;
+    margin-right: 10px; /* Espacio entre íconos */
+}
+.uk-icon-button:last-child {
+    margin-right: 0;
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Ocultar enlaces de idioma y contacto en pantallas pequeñas */
+    }
+}
+
+/* Estilos generales para la navbar */
+.menu-items {
+    background-color: #EFA834; /* Fondo amarillo para el menú */
+    padding: 10px 0;
+}
+.menu-item {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    position: relative; /* Necesario para el pseudo-elemento */
+    transition: color 0.3s;
+}
+.menu-item i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Efecto hover con línea debajo */
+.menu-item:hover {
+    color: #fff; /* Color blanco en hover */
+}
+
+/* Efecto hover con línea debajo */
+.menu-item::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #F06D35; /* Color naranja para la línea */
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+}
+
+/* Expande la línea en hover */
+.menu-item:hover::after,
+.menu-item.active::after {
+    width: 50%; /* Ajusta el ancho de la línea en estado activo o hover */
+}
+
+/* Estilo para el texto en el estado activo */
+.menu-item.active {
+    color: #fff; /* Color de texto blanco para el elemento activo */
+}
+
+
+
+

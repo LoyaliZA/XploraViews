@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplora</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar-header">
+        <div class="uk-flex uk-flex-middle">
+            <a href="index.html" class="uk-logo">
+                <img src="logo.png" alt="Xplora" style="height: 30px; margin-right: 10px;"> <!-- Incluye tu logo aquí -->
+                <span class="navbar-title">Xplora</span>
+            </a>
+        </div>
+        <div class="uk-flex uk-flex-middle">
+            <a href="#" class="navbar-links"><i class="bi bi-translate"></i> Español</a>
+            <a href="#" class="navbar-links">Contacto</a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
+            <a href="#" class="uk-icon-button" uk-icon="icon: close"></a>
+            <!-- Icono de menú hamburguesa para pantallas pequeñas -->
+        </div>
+    </header>
+
+<!-- Menú de navegación -->
+<nav class="menu-items uk-flex uk-flex-center uk-child-width-expand@s uk-visible@s">
+    <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+        <i class="bi bi-geo-alt"></i>
+        Destinos
+    </a>
+    <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+        <i class="bi bi-house-door"></i>
+        Hospedaje
+    </a>
+    <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+        <i class="bi bi-airplane"></i>
+        Transporte
+    </a>
+    <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+        <i class="bi bi-journal"></i>
+        Turismo
+    </a>
+    <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+        <i class="bi bi-compass"></i>
+        Experiencias
+    </a>
+    <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+        <i class="bi bi-person"></i>
+        Inicio de sesión
+    </a>
+</nav>
+
+<!-- Toggle para pantallas pequeñas -->
+<div class="uk-hidden@s">
+    <a class="uk-icon-button" href="#" uk-toggle="target: #offcanvas-nav" uk-icon="menu"></a>
+</div>
+
+<!-- Off-canvas para pantallas pequeñas -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+            <li><a href="#"><i class="bi bi-geo-alt uk-margin-small-right"></i> Destinos</a></li>
+            <li><a href="#"><i class="bi bi-house-door uk-margin-small-right"></i> Hospedaje</a></li>
+            <li><a href="#"><i class="bi bi-airplane uk-margin-small-right"></i> Transporte</a></li>
+            <li><a href="#"><i class="bi bi-journal uk-margin-small-right"></i> Turismo</a></li>
+            <li><a href="#"><i class="bi bi-compass uk-margin-small-right"></i> Experiencias</a></li>
+            <li><a href="#"><i class="bi bi-person uk-margin-small-right"></i> Inicio de sesión</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+    <div class="uk-container uk-margin">
+        <h1 class="uk-heading-line uk-text-primary">
+            Estos son tus elementos
+        </h1>
+
+        <h2>Boton con icono (no lo vas a usar)</h2>
+        <button class="uk-button uk-button-primary"><i class="bi bi-facebook"></i>
+        </button>
+
+        <h2>Boton amarillo general</h2>
+
+        <button class="button-yellow">Reservar ahora</button>
+
+        <h2>Boton naranja con borde</h2>
+
+        <button class="button-orange-outline"><i class="bi bi-heart"></i> Guardar Alojamiento</button>
+
+        <h2>Boton naranja solido</h2>
+        <button class="button-orange-solid">Continuar</button>
+
+        <div class="button-container">
+            <button class="button-full-width button-yellow">Reservar ahora</button>
+        </div>
+        
+
+    </div>
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -3507,7 +3507,6 @@ ul.uk-nav-sub {
   box-sizing: border-box;
 }
 .uk-navbar-nav {
-  background-color: #EFA834;
   display: flex;
   gap: 15px;
   margin: 0;
@@ -3529,12 +3528,14 @@ ul.uk-nav-sub {
   box-sizing: border-box;
   min-height: 80px;
   font-size: 0.875rem;
-  font-family: 'Quicksand', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-decoration: none;
 }
 .uk-navbar-nav > li > a {
   padding: 0 0;
-  color: #000000;
+  color: #999;
   text-transform: uppercase;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color;
