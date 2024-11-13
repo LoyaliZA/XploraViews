@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplora reservar</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar-header">
+        <div class="uk-flex uk-flex-middle">
+            <a href="index.html" class="logo-xplora">
+                <img src="assets/LogoXplora.svg" alt="Xplora" style="height: 60px; margin-right: 2px;">
+                <!-- Incluye tu logo aquí -->
+                <span class="navbar-title">Xplora</span>
+            </a>
+        </div>
+        <div class="uk-flex uk-flex-middle">
+            <a href="#" class="navbar-links"><i class="bi bi-translate"></i> Español</a>
+            <a href="#" class="navbar-links">Contacto</a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+            <!-- Icono de menú hamburguesa para pantallas pequeñas -->
+        </div>
+    </header>
+
+    <div class="uk-container uk-margin-top">
+        <!-- Encabezado de Reserva Segura -->
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom uk-text-center">
+            <h4 class="uk-text-bold uk-text-warning">Reserva segura ¡Solo te toma 2 minutos!</h4>
+            <div class="uk-alert-success" uk-alert>
+                <p><span class="bi bi-check-circle-fill"></span> 100% reembolsable antes del miércoles 13 de nov., 18:00 (hora local)</p>
+                <p>Si tus planes cambian, puedes modificar o cancelar esta estancia. Porque la flexibilidad es importante.</p>
+            </div>
+        </div>
+    
+        <!-- Contenedor Principal para Resumen y Detalles del Hotel -->
+        <div class="uk-grid-small uk-child-width-1-3@m" uk-grid>
+            <!-- Resumen de la Reserva -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Resumen de la reserva</h4>
+                    <p><strong>Habitación 1:</strong> 2 adultos 2 camas matrimoniales para no fumadores</p>
+                    <h5 class="uk-text-bold">Detalles del pago</h5>
+                    <p>2 adultos 2 camas matrimoniales para no fumadores</p>
+                    <p>MXN $5900</p>
+                    <p>Impuestos y cargos</p>
+                    <p>MXN $2900</p>
+                    <h4 class="uk-text-danger uk-text-bold">Total de pago</h4>
+                    <h3>MXN $8800</h3>
+                    <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Reservar</button>
+                </div>
+            </div>
+    
+            <!-- Información del Hotel -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Hotel Colony</h4>
+                    <img src="assets/hospedaje/hotel_playa_linda/ht4.jpg" alt="Imagen del Hotel" class="uk-border-rounded" style="width:100%; height:auto; margin-bottom:10px;">
+                    <div class="uk-flex uk-flex-middle">
+                        <span class="uk-badge uk-background-warning uk-text-bold">8.2</span>
+                        <p class="uk-margin-small-left">Reseñas <br> 2,345 experiencias</p>
+                    </div>
+                    <p><strong>Habitación 1:</strong> 2 adultos 2 camas matrimoniales para no fumadores</p>
+                    <p><strong>Check-in:</strong> dom., 17 nov. <br><strong>Check-out:</strong> lun., 18 nov. <br> Estancia de 1 noche</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    <!-- Sripts -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

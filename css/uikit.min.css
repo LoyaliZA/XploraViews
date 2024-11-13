@@ -1231,7 +1231,7 @@ select.uk-form-width-xsmall {
   color: inherit;
   text-transform: none;
   -webkit-appearance: none;
-  border-radius: 0;
+  border-radius: 10px;
   display: inline-block;
   box-sizing: border-box;
   padding: 0 30px;
@@ -1276,12 +1276,12 @@ select.uk-form-width-xsmall {
   border: 1px solid transparent;
 }
 .uk-button-primary:hover {
-  background-color: #0f7ae5;
+  background-color: #F06D35;
   color: #fff;
 }
 .uk-button-primary.uk-active,
 .uk-button-primary:active {
-  background-color: #0e6dcd;
+  background-color: #cd6d0e;
   color: #fff;
 }
 .uk-button-secondary {
@@ -1990,14 +1990,14 @@ select.uk-form-width-xsmall {
 }
 .uk-badge {
   box-sizing: border-box;
-  min-width: 18px;
-  height: 18px;
+  min-width: 35px;
+  height: 35px;
   padding: 0 5px;
-  border-radius: 500px;
+  border-radius: 10px;
   vertical-align: middle;
-  background: #1e87f0;
+  background: #EFA834;
   color: #fff !important;
-  font-size: 11px;
+  font-size: 16px;
   display: inline-flex;
   justify-content: center;
   align-items: center;

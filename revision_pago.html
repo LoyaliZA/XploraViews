@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplora reservar</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar-header">
+        <div class="uk-flex uk-flex-middle">
+            <a href="index.html" class="logo-xplora">
+                <img src="assets/LogoXplora.svg" alt="Xplora" style="height: 60px; margin-right: 2px;">
+                <!-- Incluye tu logo aquí -->
+                <span class="navbar-title">Xplora</span>
+            </a>
+        </div>
+        <div class="uk-flex uk-flex-middle">
+            <a href="#" class="navbar-links"><i class="bi bi-translate"></i> Español</a>
+            <a href="#" class="navbar-links">Contacto</a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+            <!-- Icono de menú hamburguesa para pantallas pequeñas -->
+        </div>
+    </header>
+
+    <div class="uk-container uk-margin-top uk-flex uk-flex-center">
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-padding">
+            <h4 class="uk-text-bold uk-text-danger">Revisión y Pago</h4>
+    
+            <!-- Opciones de Pago -->
+            <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
+                <!-- Formulario de Tarjeta -->
+                <div>
+                    <h5>¿Cómo quieres pagar?</h5>
+                    <div class="uk-grid-small uk-child-width-1-2" uk-grid>
+                        <div>
+                            <label><input class="uk-radio" type="radio" name="payment-method" checked> <i class="bi bi-credit-card"></i> Nueva Tarjeta</label>
+                        </div>
+                        <div>
+                            <label><input class="uk-radio" type="radio" name="payment-method"> <i class="bi bi-cash-stack"></i> Pago en efectivo</label>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Nombre del titular">
+                        </div>
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Número de la tarjeta">
+                        </div>
+                        <div class="uk-grid-small uk-child-width-1-2" uk-grid>
+                            <div>
+                                <input class="uk-input" type="text" placeholder="Fecha">
+                            </div>
+                            <div>
+                                <input class="uk-input" type="text" placeholder="CVV">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    
+                <!-- Detalles del Pago -->
+                <div>
+                    <h5 class="uk-text-bold uk-text-danger">Detalles del pago</h5>
+                    <p>2 adultos 2 camas matrimoniales para no fumadores</p>
+                    <p>MXN $5900</p>
+                    <p>Impuestos y cargos</p>
+                    <p>MXN $2900</p>
+                    <h4 class="uk-text-bold">Total de pago</h4>
+                    <h3>MXN $8800</h3>
+                    <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Pagar</button>
+                </div>
+            </div>
+    
+            <!-- Términos y Condiciones -->
+            <p class="uk-text-small uk-text-center uk-margin-top">
+                Al hacer clic en "Pagar", aceptas los términos y condiciones de Xplora.com, y su política de privacidad.
+            </p>
+        </div>
+    </div>
+
+    <!-- Sripts -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
