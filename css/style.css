@@ -125,7 +125,7 @@
     padding: 10px 0;
 }
 .menu-item {
-    color: #333;
+    color: #f6f6f6;
     font-size: 14px;
     text-align: center;
     position: relative; /* Necesario para el pseudo-elemento */
