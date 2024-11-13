@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Experiencias</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    
+        <!-- Header -->
+        <header class="navbar-header">
+            <div class="uk-flex uk-flex-middle">
+                <a href="index.html" class="logo-xplora">
+                    <img src="assets/LogoXplora.svg" alt="Xplora" style="height: 60px; margin-right: 2px;">
+                    <!-- Incluye tu logo aquí -->
+                    <span class="navbar-title">Xplora</span>
+                </a>
+            </div>
+            <div class="uk-flex uk-flex-middle">
+                <a href="#" class="navbar-links"><i class="bi bi-translate"></i> Español</a>
+                <a href="#" class="navbar-links">Contacto</a>
+                <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
+                <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
+                <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+                <!-- Icono de menú hamburguesa para pantallas pequeñas -->
+            </div>
+        </header>
+    
+        <!-- Menú de navegación -->
+        <nav class="menu-items uk-flex uk-flex-center uk-child-width-expand@s uk-visible@s">
+            <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+                <i class="bi bi-compass"></i>
+                Destinos
+            </a>
+            <a href="hospedaje.html" class="menu-item uk-flex uk-flex-column uk-text-center">
+                <i class="bi bi-house-door"></i>
+                Hospedaje
+            </a>
+            <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+                <i class="bi bi-airplane"></i>
+                Transporte
+            </a>
+            <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+                <i class="bi bi-map"></i>
+                Turismo
+            </a>
+            <a href="experiencia_vista.html" class="menu-item uk-flex uk-flex-column uk-text-center">
+                <i class="bi bi-journals"></i>
+                Experiencias
+            </a>
+            <a href="login.html" class="menu-item uk-flex uk-flex-column uk-text-center">
+                <i class="bi bi-person"></i>
+                Inicio de sesión
+            </a>
+        </nav>
+    
+        <!-- Toggle para pantallas pequeñas -->
+        <div class="uk-hidden@s">
+            <a class="uk-icon-button" href="#" uk-toggle="target: #offcanvas-nav" uk-icon="menu"></a>
+        </div>
+    
+        <!-- Off-canvas para pantallas pequeñas -->
+        <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="#"><i class="bi bi-geo-alt uk-margin-small-right"></i> Destinos</a></li>
+                    <li><a href="#"><i class="bi bi-house-door uk-margin-small-right"></i> Hospedaje</a></li>
+                    <li><a href="#"><i class="bi bi-airplane uk-margin-small-right"></i> Transporte</a></li>
+                    <li><a href="#"><i class="bi bi-journal uk-margin-small-right"></i> Turismo</a></li>
+                    <li><a href="#"><i class="bi bi-compass uk-margin-small-right"></i> Experiencias</a></li>
+                    <li><a href="login.html"><i class="bi bi-person uk-margin-small-right"></i> Inicio de sesión</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <main class="experience-page">
+            <!-- Información resumida del hotel -->
+            <div class="hotel-summary">
+                <h2>Hotel Colón México</h2>
+                <p>69 personas han visitado este hotel</p>
+                <div class="booking-info">
+                    <div class="check-in">
+                        <strong>Check-in:</strong> vie, 22 oct - jue, 25 nov
+                    </div>
+                    <div class="guests">
+                        <strong>Huéspedes:</strong> 2 adultos - 1 niño - 1 habitación
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content-wrapper">
+                <!-- Filtros en el lateral izquierdo -->
+                <!-- Filtros en el lateral izquierdo -->
+            <aside class="filter-section">
+                <h3>Filtrar por:</h3>
+                <div class="filter-group">
+                    <h4>Ubicación</h4>
+                    <label><input type="checkbox"> Ciudad de México</label>
+                    <label><input type="checkbox"> Reforma</label>
+                    <label><input type="checkbox"> Tacubaya</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Categoría</h4>
+                    <label><input type="checkbox"> Lugares icónicos</label>
+                    <label><input type="checkbox"> Eventos y Festividades</label>
+                    <label><input type="checkbox"> Gastronomía Auténtica</label>
+                    <label><input type="checkbox"> Arte y Cultura</label>
+                    <label><input type="checkbox"> Escapadas Cercanas</label>
+                    <label><input type="checkbox"> Vida Nocturna y Entretenimiento</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Idiomas</h4>
+                    <label><input type="checkbox"> Español</label>
+                    <label><input type="checkbox"> Inglés</label>
+                    <label><input type="checkbox"> Francés</label>
+                    <label><input type="checkbox"> Italiano</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Mostrar resultados con</h4>
+                    <label><input type="checkbox"> Entradas libres</label>
+                    <label><input type="checkbox"> Reseñas destacadas</label>
+                </div>
+            </aside>
+    
+                <!-- Sección principal de experiencias -->
+                <section class="experience-section">
+                    <div class="main-experience">
+                        <div class="user-icon">
+                            <i class="bi bi-person-circle"></i>
+                        </div>
+                        <h3>Mi experiencia en Hotel Colón en México</h3>
+                        <p><strong>Adrian M.</strong> | 16 de octubre de 2024 | 4.5 estrellas</p>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...”</p>
+                        <p>Fecha de estadía: 16 de agosto de 2024 | Tipo de estadía: Viaje sencillo</p>
+                        <button class="button-yellow">Me gusta</button>
+                        <button class="button-secondary">Ver más opiniones</button>
+                        <button class="button-secondary">Realizar comentario</button>
+                    </div>
+                <!-- Reseñas adicionales -->
+                <div class="additional-experiences">
+                    <div class="experience-card">
+                        <p><strong>Juan</strong> | México</p>
+                        <p>Habitación Doble Estándar - 2 noches en octubre 2024</p>
+                        <p>Mi Experiencia con el Hotel: “Aquí se verán todas las experiencias que se van a visualizar”</p>
+                        <span class="rating-score">8.2</span>
+                    </div>
+                </div>
+                </section>
+            </div>
+        </main>
+        <!-- Sripts -->
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <script src="js/scripts.js"></script>
+    
+</body>
+</html>
