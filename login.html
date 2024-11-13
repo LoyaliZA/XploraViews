@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplora - Login</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar-header">
+        <div class="uk-flex uk-flex-middle">
+            <a href="index.html" class="logo-xplora">
+                <img src="assets/LogoXplora.svg" alt="Xplora" style="height: 60px; margin-right: 2px;">
+                <!-- Incluye tu logo aquí -->
+                <span class="navbar-title">Xplora</span>
+            </a>
+        </div>
+        <div class="uk-flex uk-flex-middle">
+            <a href="#" class="navbar-links"><i class="bi bi-translate"></i> Español</a>
+            <a href="#" class="navbar-links">Contacto</a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+            <!-- Icono de menú hamburguesa para pantallas pequeñas -->
+        </div>
+    </header>
+
+    <!-- Sección de Login -->
+
+    <section class="login-section">
+        <div class="uk-container uk-container-xsmall uk-text-center">
+
+            <!-- Paso 1: Email -->
+            <div class="step" id="step1">
+                <h2>Inicia sesión o crea una cuenta</h2>
+                <p>Encuentra tu próximo destino ahora</p>
+                <form class="login-form">
+                    <input type="email" placeholder="Ingresa tu correo electrónico" class="uk-input uk-form-large">
+                    <button type="button" class="button-orange-solid" onclick="nextStep(2)">Continuar</button>
+                </form>
+                <div>
+                    <!-- Texto adicional -->
+                <p class="uk-margin-small-top">o continúa con</p>
+                <!-- Botones de Redes Sociales -->
+                </div>
+                
+                <div class="social-login-buttons">
+                    <button class="button-gray-outline">
+                        <i class="bi bi-google"></i>
+                        <span>Google</span>
+                    </button>
+                    <button class="button-gray-outline">
+                        <i class="bi bi-apple"></i>
+                        <span>Apple</span>
+                    </button>
+                    <button class="button-gray-outline">
+                        <i class="bi bi-facebook"></i>
+                        <span>Facebook</span>
+                    </button>
+                </div>
+                <!-- Texto de Términos y Condiciones -->
+                <p class="uk-margin-large-top">Al crear una cuenta, aceptas nuestro <a href="#">aviso de privacidad</a>
+                    y los <a href="#">términos de uso</a>.</p>
+            </div>
+
+
+            <!-- Paso 2: Nombre -->
+            <div class="step" id="step2" style="display: none;">
+                <h2>Escribe el nombre que aparece en tu identificación para viajar</h2>
+                <p>Usa el mismo nombre completo de tu identificación para viajar</p>
+                <form class="login-form">
+                    <input type="text" placeholder="Nombre(s)" class="uk-input uk-form-large uk-margin-small-bottom">
+                    <input type="text" placeholder="Apellido" class="uk-input uk-form-large">
+                    <button type="button" class="button-orange-solid" onclick="nextStep(3)">Continuar</button>
+                </form>
+            </div>
+
+            <!-- Paso 3: Contraseña -->
+            <div class="step" id="step3" style="display: none;">
+                <h2>Crea una contraseña</h2>
+                <p>Crea una contraseña para usarla junto con otras formas de inicio de sesión</p>
+                <form class="login-form">
+                    <input type="password" placeholder="Contraseña" class="uk-input uk-form-large">
+                    <button type="button" class="button-orange-solid" onclick="showModal()">Continuar</button>
+                </form>
+            </div>
+
+        </div>
+
+
+        
+    </section>
+
+    <!-- Modal de Confirmación -->
+    <div id="confirmation-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-text-center">
+            <img src="assets/LogoXplora.svg" alt="Xplora Logo" style="height: 100px;">
+            <h2>¡Bienvenido a Xplora!</h2>
+            <p>¡Disfruta de tus viajes en todo el mundo!</p>
+            <button class="button-orange-solid" onclick="closeModal()">Continuar</button>
+        </div>
+    </div>
+
+    <!-- Imagen inferior -->
+    <div class="login-image uk-text-center">
+        <img src="assets/login/asset_login1.svg" alt="Imagen inferior de inicio de sesión">
+    </div>
+
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -53,21 +53,7 @@
     transform: translateY(-2px);
 }
 
-/* Botón naranja sólido (Continuar) */
-.button-orange-solid {
-    background-color: #F06D35;
-    color: #fff;
-    border: none;
-    border-radius: 12px; /* Ajuste de bordes menos redondeados */
-    padding: 10px 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-.button-orange-solid:hover {
-    transform: translateY(-2px);
-}
+
 
 /* Contenedor del botón */
 .button-container {
@@ -90,19 +76,29 @@
     text-align: center;
 }
 
+
+
 /* Estilos para el header */
-.navbar-header {
+.navbar-header  {
     background-color: #fdf6e3; /* Fondo claro */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.logo-xplora {
+    display: flex;
+    align-items: center;
+}
+.logo-xplora img {
+    max-width: 350px; /* Ajuste de ancho para el logo */
+}
 .navbar-title {
-    font-size: 18px;
+    font-size: 24px;
     color: #f15b2a;
     font-weight: bold;
     margin-left: 10px;
+    font-family: 'Mulish', sans-serif;
 }
 .navbar-links {
     color: #333;
@@ -169,6 +165,158 @@
 .menu-item.active {
     color: #fff; /* Color de texto blanco para el elemento activo */
 }
+
+
+/* Estilos generales para la sección de login */
+.login-section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+.login-section h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+.login-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+.login-form {
+    max-width: 100%; /* Ajuste de ancho para el formulario */
+    margin: 0 auto;
+}
+.login-form .uk-input {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+.login-form .uk-input::placeholder {
+    color: #999;
+}
+
+/* Botón Naranja Sólido */
+.button-orange-solid {
+    background-color: #F06D35;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button-orange-solid:hover {
+    background-color: #d85b2f;
+}
+
+/* Botón Gris con Borde e Ícono a la Izquierda */
+.button-gray-outline {
+    background-color: transparent;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%; /* Ajuste para que ocupe todo el ancho */
+    height: 50px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+    max-width: 100%; /* Para mantener el ancho completo en el contenedor */
+}
+.button-gray-outline i {
+    position: absolute;
+    left: 15px;
+    font-size: 24px;
+    color: #F06D35; /* Color para el icono */
+}
+.button-gray-outline span {
+    flex-grow: 1;
+    text-align: center;
+}
+.button-gray-outline:hover {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Contenedor para los botones de redes sociales */
+.social-login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%; /* Ajuste de ancho */
+}
+.social-login-buttons .button-gray-outline {
+    max-width: 100%;
+}
+
+/* Imagen inferior */
+.login-image {
+    margin-top: 1px;
+    text-align: center;
+}
+.login-image img {
+    max-width: 100%; /* Mantiene el ancho dentro de su contenedor */
+    max-height: 400px; /* Ajusta la altura máxima de la imagen */
+    height: auto; /* Mantiene la proporción */
+}
+
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #EFC684; /* Fondo color crema */
+    padding: 20px 0;
+}
+.footer h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+.footer .uk-list li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+.footer .uk-list li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer .uk-list li a:hover {
+    color: #F06D35; /* Color naranja en hover */
+}
+.footer-bottom {
+    background-color: #EFA834; /* Fondo amarillo para la sección inferior */
+    padding: 10px 0;
+}
+.footer-bottom p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 12px;
+}
+.footer-icons a {
+    color: #333;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.footer-icons a:hover {
+    color: #F06D35; /* Color naranja en hover para los iconos */
+}
+
+
+
 
 
 

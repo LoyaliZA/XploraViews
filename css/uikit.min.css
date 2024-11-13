@@ -6,7 +6,7 @@ html {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   background: #fff;
-  color: #666;
+  color: #111111;
 }
 body {
   margin: 0;
@@ -1501,7 +1501,7 @@ select.uk-form-width-xsmall {
   padding-right: 0;
 }
 .uk-container-xsmall {
-  max-width: 750px;
+  max-width: 450px;
 }
 .uk-container-small {
   max-width: 900px;
@@ -5716,7 +5716,7 @@ iframe[uk-cover] {
   }
 }
 .uk-logo {
-  font-size: 1.5rem;
+  font-size: 3rem; /* Increased font size */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -6169,7 +6169,7 @@ iframe[uk-cover] {
   margin-top: 10px !important;
 }
 .uk-margin-small-top {
-  margin-top: 10px !important;
+  margin-top: 15px !important;
 }
 .uk-margin-small-bottom {
   margin-bottom: 10px !important;
