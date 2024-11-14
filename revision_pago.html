@@ -33,60 +33,64 @@
         </div>
     </header>
 
-    <div class="uk-container uk-margin-top uk-flex uk-flex-center">
-        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-padding">
-            <h4 class="uk-text-bold uk-text-danger">Revisión y Pago</h4>
-    
-            <!-- Opciones de Pago -->
-            <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
-                <!-- Formulario de Tarjeta -->
+<div class="background-gray">
+    <div class="payment-container">
+        <!-- Título -->
+        <h2 class="title">Revisión y Pago</h2>
+
+        <!-- Opciones de pago -->
+        <div class="payment-options">
+            <div class="option">
+                <input type="radio" id="card" name="payment-method" checked>
+                <label for="card">
+                    <i class="bi bi-credit-card icon"></i>
+                    <span>Nueva Tarjeta</span>
+                </label>
+            </div>
+            <div class="option">
+                <input type="radio" id="cash" name="payment-method">
+                <label for="cash">
+                    <i class="bi bi-cash icon"></i>
+                    <span>Pago en efectivo</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Formulario de pago -->
+        <div class="payment-form">
+            <label for="cardholder">Nombre del titular</label>
+            <input type="text" id="cardholder" placeholder="Nombre del titular">
+            
+            <label for="cardnumber">Número de la tarjeta</label>
+            <input type="text" id="cardnumber" placeholder="Número de la tarjeta">
+            
+            <div class="flex-row">
                 <div>
-                    <h5>¿Cómo quieres pagar?</h5>
-                    <div class="uk-grid-small uk-child-width-1-2" uk-grid>
-                        <div>
-                            <label><input class="uk-radio" type="radio" name="payment-method" checked> <i class="bi bi-credit-card"></i> Nueva Tarjeta</label>
-                        </div>
-                        <div>
-                            <label><input class="uk-radio" type="radio" name="payment-method"> <i class="bi bi-cash-stack"></i> Pago en efectivo</label>
-                        </div>
-                    </div>
-                    <form>
-                        <div class="uk-margin">
-                            <input class="uk-input" type="text" placeholder="Nombre del titular">
-                        </div>
-                        <div class="uk-margin">
-                            <input class="uk-input" type="text" placeholder="Número de la tarjeta">
-                        </div>
-                        <div class="uk-grid-small uk-child-width-1-2" uk-grid>
-                            <div>
-                                <input class="uk-input" type="text" placeholder="Fecha">
-                            </div>
-                            <div>
-                                <input class="uk-input" type="text" placeholder="CVV">
-                            </div>
-                        </div>
-                    </form>
+                    <label for="expiry">Fecha</label>
+                    <input type="text" id="expiry" placeholder="MM/AA">
                 </div>
-    
-                <!-- Detalles del Pago -->
                 <div>
-                    <h5 class="uk-text-bold uk-text-danger">Detalles del pago</h5>
-                    <p>2 adultos 2 camas matrimoniales para no fumadores</p>
-                    <p>MXN $5900</p>
-                    <p>Impuestos y cargos</p>
-                    <p>MXN $2900</p>
-                    <h4 class="uk-text-bold">Total de pago</h4>
-                    <h3>MXN $8800</h3>
-                    <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Pagar</button>
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="CVV">
                 </div>
             </div>
-    
-            <!-- Términos y Condiciones -->
-            <p class="uk-text-small uk-text-center uk-margin-top">
-                Al hacer clic en "Pagar", aceptas los términos y condiciones de Xplora.com, y su política de privacidad.
-            </p>
         </div>
+
+        <!-- Detalles del pago -->
+        <div class="payment-details">
+            <h3>Detalles del pago</h3>
+            <p>2 adultos 2 camas matrimoniales para no fumadores</p>
+            <p>Impuestos y cargos: <strong>MXN $2900</strong></p>
+            <p class="total">Total de pago: <strong>MXN $8800</strong></p>
+        </div>
+
+        <!-- Botón de pago -->
+        <button class="pay-button">Pagar</button>
+
+        <!-- Términos y condiciones -->
+        <p class="terms">Al hacer clic en "Pagar", aceptas los términos y condiciones de Xplora.com, y su política de privacidad.</p>
     </div>
+</div>
 
     <!-- Sripts -->
     <script src="js/uikit.min.js"></script>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Explora Experiencias</title>
+        <title>Explora Redactar Experiencias</title>
         <link rel="stylesheet" href="css/uikit.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,90 +105,99 @@
                 </ul>
             </div>
         </div>
-
-        <main class="experience-page">
-            <!-- Información resumida del hotel -->
-            <div class="hotel-summary">
-                <h2>Hotel Colón México</h2>
-                <p>69 personas han visitado este hotel</p>
-                <div class="booking-info">
-                    <div class="check-in">
-                        <strong>Check-in:</strong> vie, 22 oct - jue, 25 nov
-                    </div>
-                    <div class="guests">
-                        <strong>Huéspedes:</strong> 2 adultos - 1 niño - 1
-                        habitación
-                    </div>
+        
+        <div class="hotel-info-container">
+            <h2 class="hotel-name">Hotel Colón México</h2>
+            <p class="visit-info"><i class="bi bi-people"></i> 69 personas han visitado este hotel</p>
+        
+            <div class="guest-info">
+                <div class="guest-icon"><i class="bi bi-person-fill"></i></div>
+                <div class="guest-details">
+                    <label>Huéspedes</label>
+                    <p>2 adultos - 1 niño - 1 habitación</p>
                 </div>
             </div>
-
-            <div class="content-wrapper">
-                <!-- Filtros en el lateral izquierdo -->
-                <aside class="filter-section">
-                    <h3>Filtrar por:</h3>
-                    <div class="filter-group">
-                        <h4>Ubicación</h4>
-                        <label><input type="checkbox"> Ciudad de México</label>
-                        <label><input type="checkbox"> Reforma</label>
-                        <label><input type="checkbox"> Tacubaya</label>
-                    </div>
-                    <div class="filter-group">
-                        <h4>Categoría</h4>
-                        <label><input type="checkbox"> Lugares icónicos</label>
-                        <label><input type="checkbox"> Eventos y
-                            Festividades</label>
-                        <label><input type="checkbox"> Gastronomía
-                            Auténtica</label>
-                        <label><input type="checkbox"> Arte y Cultura</label>
-                        <label><input type="checkbox"> Escapadas
-                            Cercanas</label>
-                        <label><input type="checkbox"> Vida Nocturna y
-                            Entretenimiento</label>
-                    </div>
-                </aside>
-
-                <!-- Sección principal de experiencias -->
-                <section class="experience-section">
-                    <div class="main-experience">
-                        <div class="user-icon">
-                            <i class="bi bi-person-circle"></i>
-                        </div>
-                        <h3>Mi experiencia en Hotel Colón en México</h3>
-                        <p><strong>Adrian M.</strong> | 16 de octubre de 2024 |
-                            4.5 estrellas</p>
-                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua...”</p>
-                        <p>Fecha de estadía: 16 de agosto de 2024 | Tipo de
-                            estadía: Viaje sencillo</p>
-                        <button class="button-yellow">Me gusta</button>
-                        <button class="button-secondary">Ver más
-                            opiniones</button>
-                        <button class="button-secondary">Realizar
-                            comentario</button>
-                    </div>
-
-                    <div class="experience-card">
-                        <div class="content">
-                            <div class="user-info">
-                                <i class="bi bi-person-circle icon"></i> <!-- Icono de usuario -->
-                                <span>Juan</span>
-                                <span class="location"><i class="bi bi-geo-alt icon"></i> México</span>
-                            </div>
-                            <h4>Mi experiencia con el Hotel</h4>
-                            <p>Aquí se verán todos los comentarios que se van a visualizar</p>
-                            <div class="details">
-                                <div><i class="bi bi-house-door icon-home"></i> Habitación: Doble Estándar</div>
-                                <div><i class="bi bi-calendar icon-calendar"></i> 2 noches de - octubre 2024</div>
-                                <div><i class="bi bi-people icon-group"></i> En familia</div>
-                            </div>
-                        </div>
-                        <div class="rating">8.2</div>
-                    </div>
-                    
-                </section>
+        
+            <!-- Opciones de huésped -->
+            <div class="guest-options">
+                <select id="adults" class="guest-select">
+                    <option>1 adulto</option>
+                    <option selected>2 adultos</option>
+                    <option>3 adultos</option>
+                </select>
+                <select id="children" class="guest-select">
+                    <option>0 niños</option>
+                    <option selected>1 niño</option>
+                    <option>2 niños</option>
+                </select>
+                <select id="rooms" class="guest-select">
+                    <option>1 habitación</option>
+                    <option selected>2 habitaciones</option>
+                    <option>3 habitaciones</option>
+                </select>
             </div>
-        </main>
+            <div class="date-section">
+                <div class="date-box">
+                    <label for="check-in" class="date-label">Check-in</label>
+                    <input type="date" id="check-in" class="date-input">
+                </div>
+                <div class="date-box">
+                    <label for="check-out" class="date-label">Check-out</label>
+                    <input type="date" id="check-out" class="date-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-form-container">
+            <h2>Escribe Tu experiencia</h2>
+            
+            <!-- Título -->
+            <label for="experience-title">Título:</label>
+            <input type="text" id="experience-title" placeholder="Mi experiencia en Hotel Colon en México">
+            
+            <!-- Reseña -->
+            <label for="experience-review">Relata tu experiencia:</label>
+            <textarea id="experience-review" placeholder="Escribe los detalles de tu experiencia..."></textarea>
+            
+            <!-- Fecha de estadía -->
+            <label for="visit-date">Fecha de estadía:</label>
+            <input type="date" id="visit-date">
+            
+            <!-- Tipo de estadía -->
+            <label for="stay-type">Tipo de estadía:</label>
+            <input type="text" id="stay-type" placeholder="Especifica el tipo de estadía">
+            
+            <!-- Agregar Tags -->
+            <button class="tag-button" onclick="openTagForm()">Agregar Tags</button>
+            
+            <!-- Calificación de estrellas -->
+            <div class="rating">
+                <label>Califica Tu Experiencia:</label>
+                <div class="stars" id="starRating">
+                    <!-- Cada estrella será un ícono interactivo -->
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+        
+            <!-- Botones de acción -->
+            <button class="save-button" onclick="saveExperience()">Reservar</button>
+            <button class="cancel-button" onclick="cancelExperience()">Cancelar</button>
+        </div>
+        
+        <!-- Modal para confirmar experiencia guardada -->
+        <div id="confirmationModal" class="modal hidden">
+            <div class="modal-content">
+                <img src="assets/LogoXplora.svg" alt="Logo" class="modal-logo">
+                <h3>Experiencia Publicada!</h3>
+                <p>¡Con tus experiencias ayudas a que otros viajeros se animen a encontrar su próximo destino!</p>
+                <button onclick="closeModal()" class="close-modal-button">Continuar</button>
+            </div>
+        </div>
+        
 
         <!-- Sripts -->
         <script src="js/uikit.min.js"></script>

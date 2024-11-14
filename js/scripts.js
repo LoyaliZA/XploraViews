@@ -52,3 +52,40 @@ function openDrawer() {
 function closeDrawer() {
     document.getElementById("experience-drawer").classList.remove("open");
 }
+
+// Para seleccionar estrellas
+document.querySelectorAll('.star').forEach(star => {
+    star.addEventListener('click', function() {
+        const ratingValue = this.getAttribute('data-value');
+        setStarRating(ratingValue);
+    });
+});
+
+function setStarRating(value) {
+    document.querySelectorAll('.star').forEach(star => {
+        star.classList.toggle('selected', star.getAttribute('data-value') <= value);
+    });
+}
+
+// Abrir modal de confirmación
+function saveExperience() {
+    document.getElementById('confirmationModal').classList.add('visible');
+}
+
+function closeModal() {
+    document.getElementById('confirmationModal').classList.remove('visible');
+    window.location.href = 'experiencia_vista.html'; // Redireccionar al índice
+}
+
+// Función para agregar tags
+function openTagForm() {
+    let tagInput = prompt("Ingresa tus etiquetas separadas por comas:");
+    if (tagInput) {
+        // Aquí puedes manejar los tags como desees
+        alert("Tags agregados: " + tagInput);
+    }
+}
+
+function cancelExperience() {
+    window.location.href = 'experiencia_vista.html'; // Redireccionar al índice
+}

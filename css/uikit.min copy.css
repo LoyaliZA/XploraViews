@@ -1659,6 +1659,7 @@ select.uk-form-width-xsmall {
 }
 .uk-card {
   position: relative;
+  border: #EFA834;
   box-sizing: border-box;
   transition: box-shadow 0.1s ease-in-out;
 }

@@ -1,96 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xplora reservar</title>
-    <link rel="stylesheet" href="css/uikit.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-</head>
-<body>
-
-    <!-- Header -->
-    <header class="navbar-header">
-        <div class="uk-flex uk-flex-middle">
-            <a href="index.html" class="logo-xplora">
-                <img src="assets/LogoXplora.svg" alt="Xplora" style="height: 60px; margin-right: 2px;">
-                <!-- Incluye tu logo aquí -->
-                <span class="navbar-title">Xplora</span>
-            </a>
-        </div>
-        <div class="uk-flex uk-flex-middle">
-            <a href="#" class="navbar-links"><i class="bi bi-translate"></i> Español</a>
-            <a href="#" class="navbar-links">Contacto</a>
-            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
-            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
-            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
-            <!-- Icono de menú hamburguesa para pantallas pequeñas -->
-        </div>
-    </header>
-
-    <div class="uk-container uk-margin-top">
-        <!-- Encabezado de Reserva -->
-        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
-            <h4 class="uk-text-warning">Reserva segura ¡Solo te toma 2 minutos!</h4>
-            <div class="uk-alert-success" uk-alert>
-                <p><span class="bi bi-check-circle-fill"></span> 100% reembolsable antes del miércoles 13 de nov., 18:00 (hora local)</p>
-                <p>Si tus planes cambian, puedes modificar o cancelar esta estancia. Porque la flexibilidad es importante.</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Xplora reservar</title>
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="navbar-header">
+            <div class="uk-flex uk-flex-middle">
+                <a href="index.html" class="logo-xplora">
+                    <img
+                        src="assets/LogoXplora.svg"
+                        alt="Xplora"
+                        style="height: 60px; margin-right: 2px" />
+                    <!-- Incluye tu logo aquí -->
+                    <span class="navbar-title">Xplora</span>
+                </a>
             </div>
-        </div>
-    
-        <!-- Información del Huésped y Datos del Hotel -->
-        <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
-            <!-- Formulario de Información del Huésped -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">
+            <div class="uk-flex uk-flex-middle">
+                <a href="#" class="navbar-links"><i class="bi bi-translate"></i>
+                    Español</a>
+                <a href="#" class="navbar-links">Contacto</a>
+                <a
+                    href="#"
+                    class="uk-icon-button uk-margin-small-right"
+                    uk-icon="icon: facebook"></a>
+                <a
+                    href="#"
+                    class="uk-icon-button uk-margin-small-right"
+                    uk-icon="icon: instagram"></a>
+                <a
+                    href="#"
+                    class="uk-icon-button uk-margin-small-right"
+                    uk-icon="icon: twitter"></a>
+                <!-- Icono de menú hamburguesa para pantallas pequeñas -->
+            </div>
+        </header>
+
+        <div class="uk-container">
+            <h4 class="warning-header">Reserva segura ¡Solo te toma 2
+                minutos!</h4>
+            <div class="warning-box">
+                <i class="bi bi-check-circle-fill"></i>
+                <div>
+                    <p>
+                        <strong>100% reembolsable antes del miércoles 13 de
+                            nov., 18:00 (hora
+                            local)</strong>
+                    </p>
+                    <p>
+                        Si tus planes cambian, puedes modificar o cancelar esta
+                        estancia.
+                        Porque la flexibilidad es importante.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-checkin-hotel">
+                <!-- Información del Huésped -->
+                <div class="checkin-info-card">
                     <h4>¿Quién hará el check-in?</h4>
-                    <p><strong>Habitación 1:</strong> 2 adultos 2 camas matrimoniales para no fumadores</p>
-                    <form>
-                        <div class="uk-margin">
-                            <input class="uk-input" type="text" placeholder="Nombre del huésped">
-                        </div>
-                        <div class="uk-margin">
-                            <input class="uk-input" type="text" placeholder="Apellidos">
-                        </div>
-                        <div class="uk-margin uk-flex">
-                            <span class="uk-margin-small-right">🇲🇽</span>
-                            <input class="uk-input" type="tel" placeholder="Num. Teléfono">
-                        </div>
-                    </form>
-                </div>
-            </div>
-    
-            <!-- Información del Hotel -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">
-                    <h4>Hotel Colony</h4>
-                    <img src="assets/hospedaje/hotel_playa_linda/ht4.jpg" alt="Imagen del Hotel" class="uk-border-rounded" style="width:100%; height:auto; margin-bottom:10px;">
-                    <div class="uk-flex uk-flex-middle">
-                        <span class="uk-badge uk-text-bold">8.2</span>
-                        <p class="uk-margin-small-left">Reseñas <br> 2,345 experiencias</p>
+                    <p>Habitación 1: 2 adultos 2 camas matrimoniales para no
+                        fumadores</p>
+
+                    <div class="input-container">
+                        <label for="nombre">Nombre del huésped:</label>
+                        <input type="text" id="nombre"
+                            placeholder="Nombre del huésped" />
                     </div>
-                    <p><strong>Habitación 1:</strong> 2 adultos 2 camas matrimoniales para no fumadores</p>
-                    <p><strong>Check-in:</strong> dom., 17 nov. <br><strong>Check-out:</strong> lun., 18 nov. <br> Estancia de 1 noche</p>
+
+                    <div class="input-container">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos"
+                            placeholder="Apellidos" />
+                    </div>
+
+                    <label for="telefono">Num. Teléfono:</label>
+                    <div class="phone-container">
+                        <select class="phone-prefix" id="phone-prefix">
+                            <option value="+52">+52</option>
+                            <option value="+1">+1</option>
+                            <option value="+44">+44</option>
+                            <!-- Agrega otros prefijos según sea necesario -->
+                        </select>
+                        <input type="text" id="telefono"
+                            placeholder="Número de teléfono" />
+                    </div>
                 </div>
-            </div>
-        </div>
-    
-        <!-- Botón Continuar -->
-        <div class="uk-margin-top uk-text-center">
-            <button class="uk-button uk-button-primary uk-button-large">Continuar</button>
-        </div>
+
+                <!-- Contenedor de Información del Hotel -->
+<div class="hotel-description-container">
+    <!-- Imagen del hotel -->
+    <div class="hotel-image-container">
+        <img src="assets/hospedaje/hotel_playa_linda/ht4.jpg" alt="Imagen del Hotel Colony" class="hotel-image">
     </div>
     
+    <!-- Información del hotel -->
+    <div class="hotel-info">
+        <h2 class="hotel-name">Hotel Colony</h2>
+        
+        <!-- Contenedor de reseñas -->
+        <div class="review-score">
+            <span class="score">8.2</span>
+            <span class="review-text">2,345 experiencias</span>
+        </div>
+        
+        <!-- Descripción de la habitación -->
+        <p class="room-description">
+            <strong>Habitación 1:</strong> 2 adultos 2 camas matrimoniales para no fumadores
+        </p>
+        
+        <!-- Fechas de check-in y check-out -->
+        <div class="stay-dates">
+            <p><strong>Check-in:</strong> dom., 17 nov.</p>
+            <p><strong>Check-out:</strong> lun., 18 nov.</p>
+            <p><strong>Estancia de:</strong> 1 noche</p>
+        </div>
+        
+        <!-- Botón de continuar -->
+        <button class="continue-button">Continuar</button>
+    </div>
+</div>
 
+            </div>
+        </div>
 
-    <!-- Sripts -->
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
-    <script src="js/scripts.js"></script>
-</body>
+        <!-- Sripts -->
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
