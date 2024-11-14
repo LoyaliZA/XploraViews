@@ -1,3 +1,4 @@
+/*botones de Prueba______________________________________*/
 .button-yellow {
     background-color: #e2b223;
     color: #000;
@@ -77,7 +78,7 @@
 }
 
 
-
+/* Estilos para Definir el Header______________________________________________________*/
 /* Estilos para el header */
 .navbar-header  {
     background-color: #fdf6e3; /* Fondo claro */
@@ -119,7 +120,8 @@
     }
 }
 
-/* Estilos generales para la navbar */
+/* Estilos para el menú de navegación _________________________________________________*/
+
 .menu-items {
     background-color: #EFA834; /* Fondo amarillo para el menú */
     padding: 10px 0;
@@ -167,7 +169,7 @@
 }
 
 
-/* Estilos generales para la sección de login */
+/* Estilos generales para la sección de login __________________________________________*/
 .login-section {
     padding: 50px 0;
     background-color: #fff;
@@ -198,7 +200,7 @@
     color: #999;
 }
 
-/* Botón Naranja Sólido */
+/* Botón Naranja Sólido ______________________________________________________________*/
 .button-orange-solid {
     background-color: #F06D35;
     color: #fff;
@@ -215,7 +217,7 @@
     background-color: #d85b2f;
 }
 
-/* Botón Gris con Borde e Ícono a la Izquierda */
+/* Botón Gris con Borde e Ícono a la Izquierda____________________________________________ */
 .button-gray-outline {
     background-color: transparent;
     color: #666;
@@ -249,7 +251,7 @@
     color: #333;
 }
 
-/* Contenedor para los botones de redes sociales */
+/* Contenedor para los botones de redes sociales _____________________________________________________*/
 .social-login-buttons {
     display: flex;
     flex-direction: column;
@@ -262,7 +264,7 @@
     max-width: 100%;
 }
 
-/* Imagen inferior */
+/* Imagen inferior del login _________________________________________________________________________*/
 .login-image {
     margin-top: 1px;
     text-align: center;
@@ -274,7 +276,7 @@
 }
 
 
-/* Estilos generales del footer */
+/* Estilos generales del footer ________________________________________________________________________*/
 .footer {
     background-color: #EFC684; /* Fondo color crema */
     padding: 20px 0;
@@ -316,14 +318,14 @@
 }
 
 
-/* Contenedor principal de la barra de búsqueda */
+/* Contenedor principal de la barra de búsqueda ________________________________________________________*/
 .search-bar-container {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
-/* Barra de búsqueda */
+/* Barra de búsqueda __________________________________________________________________________________*/
 .search-bar {
     display: flex;
     align-items: center;
@@ -336,7 +338,7 @@
     gap: 15px;
 }
 
-/* Campo de entrada de texto */
+/* Campo de entrada de texto ___________________________________________________________________________*/
 .search-input, .date-input {
     display: flex;
     align-items: center;
@@ -369,7 +371,7 @@
     width: 100%;
 }
 
-/* Estilo para los separadores */
+/* Estilo para los separadores son las rayas | que separan el contenido | ___________________________________________________________________________*/
 .separator {
     width: 1px;
     height: 40px;
@@ -377,7 +379,7 @@
     margin: 0 10px;
 }
 
-/* Placeholder */
+/* Placeholder ________________________________________________________________________________*/
 .search-bar .input-field::placeholder {
     color: #2a2a2a;
     font-weight: normal;
@@ -398,7 +400,7 @@
 }
 
 
-/* Estilos para las pestañas de navegación */
+/* Estilos para las pestañas de navegación ___________________________________________________________*/
 .uk-subnav-pill > * > a {
     font-weight: bold;
     font-size: 16px;
@@ -411,7 +413,7 @@
 
 
 
-/* Contenedor de la barra de pestañas */
+/* Contenedor de la barra de pestañas ______________________________________________________________*/
 .tab-menu {
     display: flex;
     justify-content: space-between;
@@ -423,7 +425,7 @@
 }
 
 
-/* Estilo para cada pestaña */
+/* Estilo para cada pestaña __________________________________________________________________________*/
 .tab-item {
     background: none;
     border: none;
@@ -435,7 +437,7 @@
     position: relative;
 }
 
-/* Línea naranja debajo de la pestaña activa */
+/* Línea naranja debajo de la pestaña activa _________________________________________________________*/
 .tab-item.active::after {
     content: '';
     display: block;
@@ -452,7 +454,7 @@
     color: #F06D35;
 }
 
-/* Contenedor principal centrado */
+/* Contenedor principal centrado ____________________________________________________________________*/
 .main-container {
     display: flex;
     gap: 20px;
@@ -509,7 +511,7 @@
     border-bottom-left-radius: 10px;
 }
 
-/* Contenedor de Reseñas y Mapa */
+/* Contenedor de Reseñas y Mapa _________________________________________________________________________*/
 .reviews-and-map-container {
     display: flex;
     flex-direction: column;
@@ -525,7 +527,7 @@
     width: 100%;
 }
 
-/* Encabezado de reseñas */
+/* Encabezado de reseñas ______________________________________________________________________________*/
 .reviews-header {
     display: flex;
     align-items: center;
@@ -553,7 +555,7 @@
     font-weight: bold;
 }
 
-/* Lista de reseñas */
+/* Lista de reseñas ________________________________________________________________________________*/
 .reviews-list {
     list-style: none;
     padding: 0;
@@ -571,7 +573,7 @@
     cursor: pointer;
 }
 
-/* Contenedor de mapa */
+/* Contenedor de mapa ___________________________________________________________________________*/
 .map-container {
     position: relative;
     margin-top: 20px;
@@ -579,7 +581,7 @@
     overflow: hidden;
 }
 
-/* Botón amarillo */
+/* Botón amarillo nuevo __________________________________________________________________*/
 .button-yellow-solid{
     background-color: #e2b223;
     color: #000;
@@ -619,7 +621,7 @@
     justify-content: space-between;
     }
 
-/* Información del Hotel */
+/* Información del Hotel ________________________________________________________________________*/
 .hotel-info {
     flex: 1;
     max-width: 100%; /* Ancho para alinear con el cuadro de reseñas */
@@ -645,7 +647,7 @@
     font-size: 14px;
 }
 
-/* Contenedor de botones con fondo gris */
+/* Contenedor de botones con fondo gris ________________________________________________________________*/
 .button-container {
     flex: 1;
     min-width: 300px; /* Ajuste de ancho mínimo */
@@ -667,7 +669,7 @@
     padding: 10px;
 }
 
-/* Contenedor de servicios */
+/* Contenedor de servicios _________________________________________________________________________*/
 .services-container {
     max-width: 1200px;
     margin: 20px auto;
@@ -684,7 +686,7 @@
     margin-bottom: 20px;
 }
 
-/* Barra de búsqueda de servicios */
+/* Barra de búsqueda de servicios_________________________________________________________________ */
 .search-bar-services {
     display: flex;
     gap: 10px;
@@ -707,7 +709,7 @@
     cursor: pointer;
 }
 
-/* Tabla de servicios */
+/* Tabla de servicios ______________________________________________________________________*/
 .services-table {
     width: 100%;
 }
@@ -757,7 +759,7 @@
 }
 
 
-/* Contenedor general para políticas e información */
+/* Contenedor general para políticas e información _______________________________________________________*/
 .policies-container {
     max-width: 800px;
     margin: 20px auto;
@@ -798,7 +800,7 @@
     margin: 5px 0 15px 0;
 }
 
-/* Estilos para logos de tarjetas */
+/* Estilos para logos de tarjetas _______________________________________________________*/
 .payment-methods {
     display: flex;
     gap: 10px;
@@ -811,7 +813,7 @@
 }
 
 
-/* Estilos generales para el botón que abre el drawer */
+/* Estilos generales para el botón que abre el drawer_______________________________________________________ */
 .button-open-drawer {
     background-color: #f0c135;
     color: #fff;
@@ -822,7 +824,7 @@
     cursor: pointer;
 }
 
-/* Side Drawer */
+/* Side Drawer (el modal del costado)_______________________________________________________*/
 .side-drawer {
     position: fixed;
     top: 0;
@@ -882,7 +884,7 @@
     cursor: pointer;
 }
 
-/* Filtros y categorías */
+/* Filtros y categorías _______________________________________________________*/
 .filter-section, .categories-section, .experiences-list {
     margin-bottom: 20px;
 }
@@ -911,7 +913,7 @@
 
 
 
-/* Información resumida del hotel __________________Vista de experiencia*/
+/* Información resumida del hotel __________________Vista de experiencia_______________________________________________________*/
 /* Contenedor de la descripción del hotel */
 .hotel-summary {
     max-width: 800px;
@@ -930,7 +932,7 @@
     margin-bottom: 10px; /* Añadir espacio debajo del título */
 }
 
-/* Contenedor principal para flexbox */
+/* Contenedor principal para flexbox_______________________________________________________ */
 .content-wrapper {
     display: flex;
     justify-content: space-between; /* Para separar las secciones */
@@ -940,7 +942,7 @@
     gap: 20px;
 }
 
-/* Sección de filtros */
+/* Sección de filtros_______________________________________________________ */
 .filter-section {
     flex: 1;
     padding: 20px;
@@ -966,7 +968,7 @@
     color: #666;
 }
 
-/* Sección principal de la experiencia */
+/* Sección principal de la experiencia _______________________________________________________*/
 .experience-section {
     flex: 3;
 }
@@ -981,7 +983,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Alineación del ícono de usuario */
+/* Alineación del ícono de usuario _______________________________________________________*/
 .user-icon {
     position: absolute;
     top: 20px;
@@ -990,14 +992,14 @@
     color: #555;
 }
 
-/* Título de la experiencia */
+/* Título de la experiencia _______________________________________________________*/
 .main-experience h3 {
     color: #FF6F61;
     margin-left: 70px; /* Alinea el título después del ícono */
     margin-bottom: 15px; /* Agrega un pequeño margen inferior */
 }
 
-/* Estilos de los botones */
+/* Estilos de los botones _______________________________________________________*/
 .button-yellow, .button-secondary {
     padding: 10px 20px;
     margin-top: 10px;
@@ -1017,7 +1019,7 @@
     color: #333;
 }
 
-/* Alineación y estilo de los iconos */
+/* Alineación y estilo de los iconos_______________________________________________________ */
 .icon {
     font-size: 20px;
     color: #FF6F61;
@@ -1038,7 +1040,7 @@
     align-items: center;
 }
 
-/* Estilo para el contenido */
+/* Estilo para el contenido _______________________________________________________*/
 .experience-card .content {
     display: flex;
     flex-direction: column;
@@ -1052,13 +1054,13 @@
     align-items: center;
 }
 
-/* Estilo para el icono de usuario (Bootstrap icon) */
+/* Estilo para el icono de usuario (Bootstrap icon)_______________________________________________________ */
 .experience-card .user-info .icon {
     font-size: 30px;
     color: #555;
 }
 
-/* Estilo para el título */
+/* Estilo para el título _______________________________________________________*/
 .experience-card .content h4 {
     font-size: 18px;
     font-weight: bold;
@@ -1066,13 +1068,13 @@
     margin: 0;
 }
 
-/* Estilo para la información del comentario */
+/* Estilo para la información del comentario_______________________________________________________ */
 .experience-card .content p {
     color: #666;
     font-size: 14px;
 }
 
-/* Estilo para la puntuación */
+/* Estilo para la puntuación _______________________________________________________*/
 .experience-card .rating {
     font-size: 16px;
     font-weight: bold;
@@ -1083,14 +1085,14 @@
     border: 1px solid #f0c135;
 }
 
-/* Estilo para los iconos de los detalles del comentario */
+/* Estilo para los iconos de los detalles del comentario _______________________________________________________*/
 .experience-card .details {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-/* Estilo para los iconos de las experiencias */
+/* Estilo para los iconos de las experiencias_______________________________________________________ */
 .experience-card .details .icon {
     font-size: 18px;
     color: #000;  /* Color negro para los iconos */
@@ -1102,7 +1104,7 @@
     align-items: center;
 }
 
-/* Icono de geolocalización (con bandera de México) */
+/* Icono de geolocalización (con bandera de México) _______________________________________________________*/
 .experience-card .details .icon-location {
     font-size: 16px;
     background-color: transparent; /* Sin fondo */
@@ -1116,7 +1118,7 @@
     background-position: center;
 }
 
-/* Estilo para los íconos de bootstrap (con los otros detalles de la experiencia) */
+/* Estilo para los íconos de bootstrap (con los otros detalles de la experiencia) _______________________________________________________*/
 .experience-card .details .icon-home {
     font-size: 18px;
 }
@@ -1143,14 +1145,14 @@
     font-family: 'Mulish', sans-serif;
 }
 
-/* Título del hotel */
+/* Título del hotel _______________________________________________________*/
 .hotel-name {
     color: #FF6F61;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-/* Información de visitas */
+/* Información de visitas _______________________________________________________*/
 .visit-info {
     color: #FF6F61;
     font-size: 16px;
@@ -1161,7 +1163,7 @@
     margin-bottom: 20px;
 }
 
-/* Información de Huéspedes */
+/* Información de Huéspedes _______________________________________________________*/
 .guest-info {
     display: flex;
     align-items: center;
@@ -1189,7 +1191,7 @@
     color: #555;
 }
 
-/* Opciones de huésped */
+/* Opciones de huésped _______________________________________________________*/
 .guest-options {
     display: flex;
     justify-content: space-between;
@@ -1205,7 +1207,7 @@
     width: 32%;
 }
 
-/* Sección de fechas */
+/* Sección de fechas _______________________________________________________*/
 .date-section {
     display: flex;
     justify-content: space-around;
@@ -1316,7 +1318,7 @@ textarea {
     border: none;
 }
 
-/* Modal estilo */
+/* Modal estilo _______________________________________________________*/
 .modal {
     position: fixed;
     top: 0;
@@ -1362,7 +1364,7 @@ textarea {
 
 
 
-/* Estilos responsivos */
+/* Estilos responsivos _______________________________________________________*/
 @media (max-width: 768px) {
     .hotel-details-container {
         flex-direction: column;
@@ -1387,7 +1389,7 @@ textarea {
     }
 }
 
-/* Ajustes de responsividad en pantallas pequeñas */
+/* Ajustes de responsividad en pantallas pequeñas _______________________________________________________*/
 @media (max-width: 768px) {
     .image-grid-container {
         grid-template-areas:
@@ -1415,7 +1417,7 @@ textarea {
     }
 }
 
-/* Contenedor principal */
+/* Contenedor principal_______________________________________________________ */
 .container-checkin-hotel {
     display: flex;
     justify-content: center;
@@ -1426,7 +1428,7 @@ textarea {
     margin-right: auto;
 }
 
-/* Encabezado de advertencia */
+/* Encabezado de advertencia _______________________________________________________*/
 .warning-header {
     font-weight: bold;
     color: #FF6F61;
@@ -1445,7 +1447,7 @@ textarea {
     margin: 0 auto 20px;
 }
 
-/* Contenedor principal del check-in */
+/* Contenedor principal del check-in_______________________________________________________ */
 .checkin-info-card {
     width: 100%; /* Ancho total para que se ajuste al contenedor padre */
     max-width: 350px;
@@ -1458,7 +1460,7 @@ textarea {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añadido para que coincida con el otro contenedor */
 }
 
-/* Título del contenedor */
+/* Título del contenedor _______________________________________________________*/
 .checkin-info-card h4 {
     font-weight: bold;
     font-size: 18px;
@@ -1466,12 +1468,12 @@ textarea {
     margin-bottom: 10px;
 }
 
-/* Contenedor de cada campo de entrada */
+/* Contenedor de cada campo de entrada _______________________________________________________*/
 .input-container {
     margin-bottom: 15px;
 }
 
-/* Estilo de las etiquetas */
+/* Estilo de las etiquetas _______________________________________________________*/
 .checkin-info-card label {
     display: block;
     font-weight: bold;
@@ -1480,7 +1482,7 @@ textarea {
     margin-bottom: 5px;
 }
 
-/* Campos de entrada */
+/* Campos de entrada _______________________________________________________*/
 .checkin-info-card input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -1490,14 +1492,14 @@ textarea {
     box-sizing: border-box;
 }
 
-/* Contenedor del campo de teléfono */
+/* Contenedor del campo de teléfono_______________________________________________________ */
 .phone-container {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-/* Prefijo de teléfono como desplegable */
+/* Prefijo de teléfono como desplegable _______________________________________________________*/
 .phone-prefix {
     padding: 8px;
     border-radius: 5px;
@@ -1508,7 +1510,7 @@ textarea {
     flex-shrink: 0;
 }
 
-/* Ajustes para el input de teléfono con prefijo */
+/* Ajustes para el input de teléfono con prefijo _______________________________________________________*/
 .phone-container input[type="text"] {
     border-radius: 5px;
     border: 1px solid #d0d0d0;
@@ -1517,7 +1519,7 @@ textarea {
     box-sizing: border-box;
 }
 
-/* Contenedor principal */
+/* Contenedor principal _______________________________________________________*/
 .hotel-description-container {
     width: 100%; /* Ancho total para que se ajuste al contenedor padre */
     max-width: 350px;
@@ -1530,7 +1532,7 @@ textarea {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenedor de la imagen del hotel */
+/* Contenedor de la imagen del hotel _______________________________________________________*/
 .hotel-image-container {
     width: 100%;
     overflow: hidden;
@@ -1544,13 +1546,13 @@ textarea {
     display: block;
 }
 
-/* Información del hotel */
+/* Información del hotel_______________________________________________________ */
 .hotel-info {
     text-align: left;
     width: 100%;
 }
 
-/* Título del hotel */
+/* Título del hotel _______________________________________________________*/
 .hotel-name {
     font-family: 'Mulish', sans-serif;
     color: #FF6F61;
@@ -1558,14 +1560,14 @@ textarea {
     margin: 0 0 10px 0;
 }
 
-/* Contenedor de reseñas */
+/* Contenedor de reseñas _______________________________________________________*/
 .review-score {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-/* Puntuación */
+/* Puntuación _______________________________________________________*/
 .score {
     background-color: #f0c135;
     color: #fff;
@@ -1576,27 +1578,27 @@ textarea {
     margin-right: 10px;
 }
 
-/* Texto de reseñas */
+/* Texto de reseñas _______________________________________________________*/
 .review-text {
     font-size: 14px;
     color: #555;
 }
 
-/* Descripción de la habitación */
+/* Descripción de la habitación _______________________________________________________*/
 .room-description {
     font-size: 14px;
     color: #333;
     margin: 5px 0;
 }
 
-/* Fechas de estancia */
+/* Fechas de estancia _______________________________________________________*/
 .stay-dates p {
     font-size: 14px;
     color: #555;
     margin: 3px 0;
 }
 
-/* Botón de continuar */
+/* Botón de continuar _______________________________________________________*/
 .continue-button {
     background-color: #FFA85C;
     color: #fff;
