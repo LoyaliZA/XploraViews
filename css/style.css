@@ -58,16 +58,20 @@
 
 /* Contenedor del botón */
 .button-container {
-    max-width: 100%; /* El contenedor ocupa el ancho completo disponible */
+    max-width: 100%;
+    /* El contenedor ocupa el ancho completo disponible */
     padding: 10px;
     display: flex;
-    justify-content: center; /* Centra el botón dentro del contenedor */
+    justify-content: center;
+    /* Centra el botón dentro del contenedor */
 }
 
 /* Botón ajustado al contenedor */
 .button-full-width {
-    width: auto; /* Ancho automático para que se ajuste al contenido */
-    max-width: 100%; /* Se adapta a su contenedor */
+    width: auto;
+    /* Ancho automático para que se ajuste al contenido */
+    max-width: 100%;
+    /* Se adapta a su contenedor */
     padding: 10px 20px;
     border-radius: 12px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -80,20 +84,25 @@
 
 /* Estilos para Definir el Header______________________________________________________*/
 /* Estilos para el header */
-.navbar-header  {
-    background-color: #fdf6e3; /* Fondo claro */
+.navbar-header {
+    background-color: #fdf6e3;
+    /* Fondo claro */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logo-xplora {
     display: flex;
     align-items: center;
 }
+
 .logo-xplora img {
-    max-width: 350px; /* Ajuste de ancho para el logo */
+    max-width: 350px;
+    /* Ajuste de ancho para el logo */
 }
+
 .navbar-title {
     font-size: 24px;
     color: #f15b2a;
@@ -101,38 +110,49 @@
     margin-left: 10px;
     font-family: 'Mulish', sans-serif;
 }
+
 .navbar-links {
     color: #333;
     font-weight: bold;
-    margin-right: 20px; /* Separación entre enlaces */
+    margin-right: 20px;
+    /* Separación entre enlaces */
 }
+
 .uk-icon-button {
     color: #333;
-    margin-right: 10px; /* Espacio entre íconos */
+    margin-right: 10px;
+    /* Espacio entre íconos */
 }
+
 .uk-icon-button:last-child {
     margin-right: 0;
 }
+
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     .navbar-links {
-        display: none; /* Ocultar enlaces de idioma y contacto en pantallas pequeñas */
+        display: none;
+        /* Ocultar enlaces de idioma y contacto en pantallas pequeñas */
     }
 }
 
 /* Estilos para el menú de navegación _________________________________________________*/
 
 .menu-items {
-    background-color: #EFA834; /* Fondo amarillo para el menú */
+    background-color: #EFA834;
+    /* Fondo amarillo para el menú */
     padding: 10px 0;
 }
+
 .menu-item {
     color: #f6f6f6;
     font-size: 14px;
     text-align: center;
-    position: relative; /* Necesario para el pseudo-elemento */
+    position: relative;
+    /* Necesario para el pseudo-elemento */
     transition: color 0.3s;
 }
+
 .menu-item i {
     font-size: 20px;
     margin-bottom: 5px;
@@ -140,7 +160,8 @@
 
 /* Efecto hover con línea debajo */
 .menu-item:hover {
-    color: #fff; /* Color blanco en hover */
+    color: #fff;
+    /* Color blanco en hover */
 }
 
 /* Efecto hover con línea debajo */
@@ -149,7 +170,8 @@
     display: block;
     width: 0;
     height: 2px;
-    background-color: #F06D35; /* Color naranja para la línea */
+    background-color: #F06D35;
+    /* Color naranja para la línea */
     position: absolute;
     bottom: -5px;
     left: 50%;
@@ -160,12 +182,14 @@
 /* Expande la línea en hover */
 .menu-item:hover::after,
 .menu-item.active::after {
-    width: 50%; /* Ajusta el ancho de la línea en estado activo o hover */
+    width: 50%;
+    /* Ajusta el ancho de la línea en estado activo o hover */
 }
 
 /* Estilo para el texto en el estado activo */
 .menu-item.active {
-    color: #fff; /* Color de texto blanco para el elemento activo */
+    color: #fff;
+    /* Color de texto blanco para el elemento activo */
 }
 
 
@@ -175,20 +199,25 @@
     background-color: #fff;
     text-align: center;
 }
+
 .login-section h2 {
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 24px;
     color: #333;
 }
+
 .login-section p {
     color: #666;
     margin-bottom: 20px;
 }
+
 .login-form {
-    max-width: 100%; /* Ajuste de ancho para el formulario */
+    max-width: 100%;
+    /* Ajuste de ancho para el formulario */
     margin: 0 auto;
 }
+
 .login-form .uk-input {
     margin-bottom: 20px;
     border-radius: 8px;
@@ -196,6 +225,7 @@
     font-size: 16px;
     padding-left: 15px;
 }
+
 .login-form .uk-input::placeholder {
     color: #999;
 }
@@ -213,6 +243,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .button-orange-solid:hover {
     background-color: #d85b2f;
 }
@@ -223,7 +254,8 @@
     color: #666;
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 100%; /* Ajuste para que ocupe todo el ancho */
+    width: 100%;
+    /* Ajuste para que ocupe todo el ancho */
     height: 50px;
     font-size: 16px;
     font-weight: normal;
@@ -234,18 +266,23 @@
     justify-content: center;
     position: relative;
     transition: background-color 0.3s, color 0.3s;
-    max-width: 100%; /* Para mantener el ancho completo en el contenedor */
+    max-width: 100%;
+    /* Para mantener el ancho completo en el contenedor */
 }
+
 .button-gray-outline i {
     position: absolute;
     left: 15px;
     font-size: 24px;
-    color: #F06D35; /* Color para el icono */
+    color: #F06D35;
+    /* Color para el icono */
 }
+
 .button-gray-outline span {
     flex-grow: 1;
     text-align: center;
 }
+
 .button-gray-outline:hover {
     background-color: #f5f5f5;
     color: #333;
@@ -258,8 +295,10 @@
     gap: 10px;
     margin-top: 20px;
     align-items: center;
-    width: 100%; /* Ajuste de ancho */
+    width: 100%;
+    /* Ajuste de ancho */
 }
+
 .social-login-buttons .button-gray-outline {
     max-width: 100%;
 }
@@ -269,52 +308,68 @@
     margin-top: 1px;
     text-align: center;
 }
+
 .login-image img {
-    max-width: 100%; /* Mantiene el ancho dentro de su contenedor */
-    max-height: 400px; /* Ajusta la altura máxima de la imagen */
-    height: auto; /* Mantiene la proporción */
+    max-width: 100%;
+    /* Mantiene el ancho dentro de su contenedor */
+    max-height: 400px;
+    /* Ajusta la altura máxima de la imagen */
+    height: auto;
+    /* Mantiene la proporción */
 }
 
 
 /* Estilos generales del footer ________________________________________________________________________*/
 .footer {
-    background-color: #EFC684; /* Fondo color crema */
+    background-color: #EFC684;
+    /* Fondo color crema */
     padding: 20px 0;
 }
+
 .footer h4 {
     font-weight: bold;
     margin-bottom: 10px;
     color: #333;
 }
+
 .footer .uk-list li {
     list-style: none;
     margin-bottom: 5px;
 }
+
 .footer .uk-list li a {
     color: #333;
     text-decoration: none;
     transition: color 0.3s;
 }
+
 .footer .uk-list li a:hover {
-    color: #F06D35; /* Color naranja en hover */
+    color: #F06D35;
+    /* Color naranja en hover */
 }
+
 .footer-bottom {
-    background-color: #EFA834; /* Fondo amarillo para la sección inferior */
+    background-color: #EFA834;
+    /* Fondo amarillo para la sección inferior */
     padding: 10px 0;
 }
+
 .footer-bottom p {
     margin: 5px 0;
     color: #333;
     font-size: 12px;
 }
+
 .footer-icons a {
     color: #333;
     font-size: 20px;
     margin: 0 10px;
     transition: color 0.3s;
 }
+
 .footer-icons a:hover {
-    color: #F06D35; /* Color naranja en hover para los iconos */
+    color: #F06D35;
+    /* Color naranja en hover para los iconos */
 }
 
 
@@ -323,6 +378,8 @@
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    width: 100%;
+    /* Asegura que el contenedor ocupe todo el ancho */
 }
 
 /* Barra de búsqueda __________________________________________________________________________________*/
@@ -334,12 +391,31 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #f5f5f5;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     gap: 15px;
 }
 
 /* Campo de entrada de texto ___________________________________________________________________________*/
-.search-input, .date-input {
+
+.search-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espaciado entre icono y el input */
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    /* Asegúrate de que el contenedor ocupe todo el espacio disponible */
+    max-width: 500px;
+    /* Ajusta el tamaño máximo según lo que necesites */
+    box-sizing: border-box;
+}
+
+
+
+.search-input,
+.date-input {
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -348,26 +424,28 @@
 
 .input-label {
     position: absolute;
-    top: -10px;
-    left: 10px;
-    font-size: 12px;
-    color: #2a2a2a;
+    top: -12px;
+    left: 12px;
+    font-size: 14px;
+    /* Tamaño más visible */
+    color: #333;
 }
 
 .search-input i {
     position: absolute;
-    left: 10px;
+    left: 20px;
     color: #2a2a2a;
 }
 
 .input-field {
-    border: none;
+    border: 1px solid #d9d9d9;
     outline: none;
-    padding: 10px 15px 10px 35px;
-    border-radius: 20px;
-    background-color: transparent;
+    padding: 12px 15px 12px 40px;
+    /* Incrementa el padding interno */
+    border-radius: 10px;
+    background-color: #fff;
     font-size: 16px;
-    color: #2a2a2a;
+    color: #333;
     width: 100%;
 }
 
@@ -394,19 +472,23 @@
     }
 
     .button-yellow {
-        width: 100%;
-        text-align: center;
+        padding: 12px 25px;
+        /* Ajusta el tamaño del botón */
+        font-size: 14px;
+        /* Tamaño más visible */
+        border-radius: 10px;
     }
 }
 
 
 /* Estilos para las pestañas de navegación ___________________________________________________________*/
-.uk-subnav-pill > * > a {
+.uk-subnav-pill>*>a {
     font-weight: bold;
     font-size: 16px;
     color: #A19990;
 }
-.uk-subnav-pill > .uk-active > a {
+
+.uk-subnav-pill>.uk-active>a {
     color: #F06D35;
     border-bottom: 2px solid #F06D35;
 }
@@ -458,10 +540,12 @@
 .main-container {
     display: flex;
     gap: 20px;
-    max-width: 1200px; /* Tamaño máximo para pantallas grandes */
+    max-width: 1200px;
+    /* Tamaño máximo para pantallas grandes */
     margin: 0 auto;
     padding: 0 20px;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en línea o en bloque */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en línea o en bloque */
 }
 
 
@@ -517,8 +601,10 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
-    min-width: 350px; /* Ajuste de ancho mínimo */
-    max-width: 380px; /* Ajuste de ancho máximo para mayor espacio */
+    min-width: 350px;
+    /* Ajuste de ancho mínimo */
+    max-width: 380px;
+    /* Ajuste de ancho máximo para mayor espacio */
     margin: 0 auto;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
@@ -582,7 +668,7 @@
 }
 
 /* Botón amarillo nuevo __________________________________________________________________*/
-.button-yellow-solid{
+.button-yellow-solid {
     background-color: #e2b223;
     color: #000;
     border: none;
@@ -599,11 +685,15 @@
     position: absolute;
     bottom: 10px;
     left: 50%;
-    transform: translateX(-50%); /* Centra completamente el botón */
-    width: 50%; /* Ajusta el ancho según sea necesario */
-    padding: 10px 20px; /* Aumenta el padding para hacerlo más grande */
+    transform: translateX(-50%);
+    /* Centra completamente el botón */
+    width: 50%;
+    /* Ajusta el ancho según sea necesario */
+    padding: 10px 20px;
+    /* Aumenta el padding para hacerlo más grande */
     text-align: center;
-    border-radius: 10px; /* Bordes redondeados opcionales */
+    border-radius: 10px;
+    /* Bordes redondeados opcionales */
 }
 
 
@@ -611,20 +701,23 @@
 .button-yellow-solid:hover {
     transform: translateY(-2px);
 }
+
 /* Contenedor general para la información del hotel y los botones */
 .second-container {
     display: flex;
     gap: 20px;
-    max-width: 1200px; /* Igual al tamaño del main-container */
+    max-width: 1200px;
+    /* Igual al tamaño del main-container */
     margin: 0px auto;
     padding: 20px 0;
     justify-content: space-between;
-    }
+}
 
 /* Información del Hotel ________________________________________________________________________*/
 .hotel-info {
     flex: 1;
-    max-width: 100%; /* Ancho para alinear con el cuadro de reseñas */
+    max-width: 100%;
+    /* Ancho para alinear con el cuadro de reseñas */
     text-align: left;
 }
 
@@ -650,8 +743,10 @@
 /* Contenedor de botones con fondo gris ________________________________________________________________*/
 .button-container {
     flex: 1;
-    min-width: 300px; /* Ajuste de ancho mínimo */
-    max-width: 380px; /* Ajuste de ancho máximo para mayor espacio */
+    min-width: 300px;
+    /* Ajuste de ancho mínimo */
+    max-width: 380px;
+    /* Ajuste de ancho máximo para mayor espacio */
     padding: 15px;
     background-color: #f5f5f5;
     border-radius: 10px;
@@ -663,8 +758,10 @@
     align-items: center;
 }
 
-.button-yellow-down, .button-orange-outline {
-    width: 100%; /* Ocupa todo el ancho del contenedor de botones */
+.button-yellow-down,
+.button-orange-outline {
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor de botones */
     font-size: 16px;
     padding: 10px;
 }
@@ -775,11 +872,13 @@
     margin-bottom: 15px;
 }
 
-.policy-section, .info-section {
+.policy-section,
+.info-section {
     margin-bottom: 20px;
 }
 
-.policy-section strong, .info-section strong {
+.policy-section strong,
+.info-section strong {
     font-weight: bold;
     color: #333;
     display: block;
@@ -787,7 +886,8 @@
     font-size: 16px;
 }
 
-.policy-section p, .info-section p {
+.policy-section p,
+.info-section p {
     font-family: 'Quicksand', sans-serif;
     color: #666;
     font-size: 14px;
@@ -885,11 +985,14 @@
 }
 
 /* Filtros y categorías _______________________________________________________*/
-.filter-section, .categories-section, .experiences-list {
+.filter-section,
+.categories-section,
+.experiences-list {
     margin-bottom: 20px;
 }
 
-.filter-section select, .category-button {
+.filter-section select,
+.category-button {
     display: inline-block;
     margin: 5px 0;
     padding: 8px;
@@ -929,13 +1032,15 @@
     font-family: 'Mulish', sans-serif;
     color: #FF6F61;
     font-size: 24px;
-    margin-bottom: 10px; /* Añadir espacio debajo del título */
+    margin-bottom: 10px;
+    /* Añadir espacio debajo del título */
 }
 
 /* Contenedor principal para flexbox_______________________________________________________ */
 .content-wrapper {
     display: flex;
-    justify-content: space-between; /* Para separar las secciones */
+    justify-content: space-between;
+    /* Para separar las secciones */
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -951,7 +1056,8 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.filter-section h3, .filter-group h4 {
+.filter-section h3,
+.filter-group h4 {
     font-family: 'Mulish', sans-serif;
     color: #333;
     margin-bottom: 15px;
@@ -995,18 +1101,22 @@
 /* Título de la experiencia _______________________________________________________*/
 .main-experience h3 {
     color: #FF6F61;
-    margin-left: 70px; /* Alinea el título después del ícono */
-    margin-bottom: 15px; /* Agrega un pequeño margen inferior */
+    margin-left: 70px;
+    /* Alinea el título después del ícono */
+    margin-bottom: 15px;
+    /* Agrega un pequeño margen inferior */
 }
 
 /* Estilos de los botones _______________________________________________________*/
-.button-yellow, .button-secondary {
+.button-yellow,
+.button-secondary {
     padding: 10px 20px;
     margin-top: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: inline-block; /* Asegura que los botones estén en línea */
+    display: inline-block;
+    /* Asegura que los botones estén en línea */
 }
 
 .button-yellow {
@@ -1095,10 +1205,13 @@
 /* Estilo para los iconos de las experiencias_______________________________________________________ */
 .experience-card .details .icon {
     font-size: 18px;
-    color: #000;  /* Color negro para los iconos */
-    background-color: #f0f0f0; /* Fondo claro */
+    color: #000;
+    /* Color negro para los iconos */
+    background-color: #f0f0f0;
+    /* Fondo claro */
     padding: 5px;
-    border-radius: 50%; /* Relleno circular */
+    border-radius: 50%;
+    /* Relleno circular */
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1107,13 +1220,15 @@
 /* Icono de geolocalización (con bandera de México) _______________________________________________________*/
 .experience-card .details .icon-location {
     font-size: 16px;
-    background-color: transparent; /* Sin fondo */
+    background-color: transparent;
+    /* Sin fondo */
     color: #000;
     padding: 5px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-image: url('path_to_mexican_flag_image.png'); /* Ruta de la imagen de la bandera */
+    background-image: url('path_to_mexican_flag_image.png');
+    /* Ruta de la imagen de la bandera */
     background-size: cover;
     background-position: center;
 }
@@ -1263,7 +1378,9 @@ label {
     display: block;
 }
 
-input[type="text"], input[type="date"], textarea {
+input[type="text"],
+input[type="date"],
+textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -1298,7 +1415,8 @@ textarea {
     color: #FF6F61;
 }
 
-.save-button, .cancel-button {
+.save-button,
+.cancel-button {
     width: 48%;
     padding: 10px;
     margin-top: 20px;
@@ -1378,14 +1496,17 @@ textarea {
     .tab-menu {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; /* Centra los elementos en la pantalla */
+        justify-content: center;
+        /* Centra los elementos en la pantalla */
     }
 
     .tab-menu .tab-item {
-        flex: 1 1 100%; /* Cada pestaña ocupa el ancho completo */
+        flex: 1 1 100%;
+        /* Cada pestaña ocupa el ancho completo */
         text-align: center;
         padding: 10px 0;
-        border-bottom: 1px solid #d9d9d9; /* Línea divisoria entre pestañas */
+        border-bottom: 1px solid #d9d9d9;
+        /* Línea divisoria entre pestañas */
     }
 }
 
@@ -1396,24 +1517,31 @@ textarea {
             "main"
             "top-left"
             "bottom-left";
-        grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+        grid-template-columns: 1fr;
+        /* Una columna para pantallas pequeñas */
         width: 100%;
     }
 
     .reviews-and-map-container {
-        min-width: 100%; /* Permitir que ocupe el ancho completo */
-        padding: 10px; /* Ajuste de padding para pantallas pequeñas */
-        max-width: 100%; /* Asegura que ocupe el ancho completo */
+        min-width: 100%;
+        /* Permitir que ocupe el ancho completo */
+        padding: 10px;
+        /* Ajuste de padding para pantallas pequeñas */
+        max-width: 100%;
+        /* Asegura que ocupe el ancho completo */
     }
 
     .second-container {
-        flex-direction: column; /* Cambia a disposición vertical */
-        align-items: center; /* Centra los elementos */
+        flex-direction: column;
+        /* Cambia a disposición vertical */
+        align-items: center;
+        /* Centra los elementos */
     }
 
     .hotel-info,
     .button-container {
-        max-width: 100%; /* Permite que ocupen el ancho completo en pantallas pequeñas */
+        max-width: 100%;
+        /* Permite que ocupen el ancho completo en pantallas pequeñas */
     }
 }
 
@@ -1449,7 +1577,8 @@ textarea {
 
 /* Contenedor principal del check-in_______________________________________________________ */
 .checkin-info-card {
-    width: 100%; /* Ancho total para que se ajuste al contenedor padre */
+    width: 100%;
+    /* Ancho total para que se ajuste al contenedor padre */
     max-width: 350px;
     margin: 0 auto;
     border: 1px solid #f0c135;
@@ -1457,7 +1586,8 @@ textarea {
     padding: 20px;
     background-color: #ffffff;
     font-family: 'Mulish', sans-serif;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añadido para que coincida con el otro contenedor */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Añadido para que coincida con el otro contenedor */
 }
 
 /* Título del contenedor _______________________________________________________*/
@@ -1521,12 +1651,14 @@ textarea {
 
 /* Contenedor principal _______________________________________________________*/
 .hotel-description-container {
-    width: 100%; /* Ancho total para que se ajuste al contenedor padre */
+    width: 100%;
+    /* Ancho total para que se ajuste al contenedor padre */
     max-width: 350px;
     margin: 0 auto;
     border: 1px solid #f0c135;
     border-radius: 10px;
-    padding: 20px; /* Ajustado para coincidir con el otro contenedor */
+    padding: 20px;
+    /* Ajustado para coincidir con el otro contenedor */
     background-color: #ffffff;
     font-family: 'Mulish', sans-serif;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -1777,4 +1909,700 @@ textarea {
 
 .pay-button:hover {
     background-color: #e8b634;
+}
+
+/* Carrusel: Tarjetas de imagen ______________________________________________________*/
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    /* Ajusta el tamaño uniforme */
+    overflow: hidden;
+    border-radius: 20px;
+    /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste al contenedor */
+}
+
+.card-image .image-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* Estilo de las tarjetas con footer _____________________________________________________*/
+.card-with-footer {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-with-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Asegura que las imágenes se ajusten correctamente */
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajuste de tamaño para mantener uniformidad con el primer carrusel */
+.same-size-card {
+    width: 100%;
+    height: 250px;
+    /* Igual que el primer carrusel */
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imágenes ajustadas */
+.same-size-card img {
+    width: 100%;
+    height: 100%;
+    /* 70% de la tarjeta ocupado por la imagen */
+    object-fit: cover;
+}
+
+/* Footer ajustado */
+.same-size-card .card-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    /* 30% de la tarjeta ocupado por el footer */
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.place-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.visits {
+    font-size: 14px;
+    color: #666;
+}
+
+.star-icon {
+    color: #FFD700;
+    /* Dorado */
+    font-size: 20px;
+}
+
+/* Estilo del banner promocional _____________________________________________________ */
+.promo-banner {
+    background-color: #FFA85C;
+    /* Fondo naranja claro */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+    /* Separación con otros elementos */
+}
+
+.promo-content {
+    max-width: 1200px;
+    /* Ajuste de ancho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* Responsivo */
+}
+
+.promo-text {
+    max-width: 600px;
+    /* Limitar ancho del texto */
+    color: #000;
+    /* Texto en blanco */
+    text-align: left;
+}
+
+.promo-text h2 {
+    font-size: 24px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+    /* Cambia el título a negro */
+}
+
+.promo-text p {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 20px;
+    color: #000;
+    /* Cambia el título a negro */
+}
+
+.promo-image img {
+    max-width: 150px;
+    /* Ajuste del tamaño de la imagen decorativa */
+    height: auto;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .promo-content {
+        flex-direction: column;
+        /* Cambiar a disposición vertical */
+        text-align: center;
+    }
+
+    .promo-text {
+        text-align: center;
+    }
+}
+
+
+/* Sección de ofertas especiales __________________________________________________*/
+
+.special-offers {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor flexible */
+.offers-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Columna de texto */
+.text-column {
+    max-width: 45%;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 24px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    color: #FF6F61;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.offer-description {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Botón */
+.button-yellow {
+    background-color: #f0c135;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-yellow:hover {
+    background-color: #e8b634;
+}
+
+/* Cuadrícula de imágenes */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2x2 cuadrícula */
+    gap: 15px;
+    max-width: 50%;
+    /* Ajustar el ancho */
+}
+
+/* Ajuste de las imágenes dentro de la cuadrícula */
+.offer-image {
+    width: 100%;
+    height: 200px;
+    /* Establecemos un tamaño fijo para mantener consistencia */
+    object-fit: cover;
+    /* Asegura que las imágenes mantengan sus proporciones */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+}
+
+
+/* Estilos para la sección de características ________________________________________________*/
+.features {
+    background-color: #fff;
+    /* Fondo claro */
+    padding: 40px 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+/* Título de la sección */
+.features .section-title {
+    font-size: 24px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    color: #FF6F61;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Grid de características */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas */
+    gap: 20px;
+    text-align: center;
+}
+
+/* Estilo de cada característica */
+.feature-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Iconos */
+.feature-icon {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* Títulos */
+.feature-title {
+    font-size: 18px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Descripciones */
+.feature-description {
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    color: #666;
+}
+
+/* Hover */
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        /* Una columna en pantallas pequeñas */
+    }
+}
+
+/* Estilos para la sección de asociaciones ______________*/
+.clients {
+    background-color: #fff;
+    /* Fondo claro */
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+.clients .section-title {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Mulish', sans-serif;
+    color: #FF6F61;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las imágenes */
+.client-logo {
+    max-width: 250px;
+    /* Tamaño máximo de las imágenes */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Espaciado entre imágenes en el carrusel */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Pagination */
+.swiper-pagination {
+    margin-top: 20px;
+}
+
+
+/* Contenedor principal ________________________________________________*/
+/* Contenedor principal */
+
+/* Contenedor principal */
+.custom-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Carrusel */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    position: relative;
+    min-width: 100%;
+    height: 500px;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.carousel-content h2 {
+    font-size: 2rem;
+    color: #FF5722;
+}
+
+.carousel-content p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.carousel-content ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.carousel-content ul li {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.btn-explore {
+    background-color: #FFC107;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-explore:hover {
+    background-color: #FFA000;
+}
+
+/* Navegación */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.carousel-nav.prev {
+    left: 10px;
+}
+
+.carousel-nav.next {
+    right: 10px;
+}
+
+/* Indicadores */
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background: #FF5722;
+}
+
+
+/* Estilos para la seleccion de viaje ______________*/
+/* Sección principal */
+.travel-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Opciones de tipo de viaje */
+/* Sección principal */
+.travel-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Selector de tipo de viaje */
+.travel-selector {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.travel-option {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.travel-option.active {
+    background-color: #ffa85c;
+    color: #fff;
+    font-weight: bold;
+    border-color: transparent;
+}
+
+.travel-option:hover {
+    background-color: #f0c135;
+    color: #fff;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-bar.hidden {
+    display: none;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 15px;
+    flex: 1;
+}
+
+.search-input i {
+    margin-right: 10px;
+    color: #aaa;
+}
+
+.search-input input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-button {
+    background-color: #ffa85c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #f06d35;
+}
+
+/* Agregar vuelo */
+.add-flight {
+    color: #f06d35;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Contenedor principal del dropdown */
+.custom-dropdown {
+    position: relative;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Cabecera del dropdown */
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.dropdown-header i {
+    color: #aaa;
+    font-size: 16px;
+}
+
+/* Lista de opciones desplegables */
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 5px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Opciones individuales */
+/* Ajustes del dropdown con UIkit */
+.uk-button-default {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uk-button-default:hover {
+    background-color: #f0a835;
+    color: #fff;
+}
+
+.uk-dropdown {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.uk-list {
+    margin: 0;
+    padding: 0;
+}
+
+.uk-list-divider>li {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.uk-list-divider>li:hover {
+    background-color: #ffa85c;
+    color: #fff;
 }

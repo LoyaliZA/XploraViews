@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplora</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar-header">
+        <div class="uk-flex uk-flex-middle">
+            <a href="index.html" class="logo-xplora">
+                <img src="assets/LogoXplora.svg" alt="Xplora" style="height: 60px; margin-right: 2px;">
+                <!-- Incluye tu logo aquí -->
+                <span class="navbar-title">Xplora</span>
+            </a>
+        </div>
+        <div class="uk-flex uk-flex-middle">
+            <a href="#" class="navbar-links"><i class="bi bi-translate"></i>
+                Español</a>
+            <a href="#" class="navbar-links">Contacto</a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
+            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+            <!-- Icono de menú hamburguesa para pantallas pequeñas -->
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="menu-items uk-flex uk-flex-center uk-child-width-expand@s uk-visible@s">
+        <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+            <i class="bi bi-compass"></i>
+            Destinos
+        </a>
+        <a href="hospedaje.html" class="menu-item uk-flex uk-flex-column uk-text-center">
+            <i class="bi bi-house-door"></i>
+            Hospedaje
+        </a>
+        <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+            <i class="bi bi-airplane"></i>
+            Transporte
+        </a>
+        <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+            <i class="bi bi-map"></i>
+            Turismo
+        </a>
+        <a href="#" class="menu-item uk-flex uk-flex-column uk-text-center">
+            <i class="bi bi-journals"></i>
+            Experiencias
+        </a>
+        <a href="login.html" class="menu-item uk-flex uk-flex-column uk-text-center">
+            <i class="bi bi-person"></i>
+            Inicio de sesión
+        </a>
+    </nav>
+
+
+    <!-- Toggle para pantallas pequeñas -->
+    <div class="uk-hidden@s">
+        <a class="uk-icon-button" href="#" uk-toggle="target: #offcanvas-nav" uk-icon="menu"></a>
+    </div>
+
+    <!-- Off-canvas para pantallas pequeñas -->
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="#"><i class="bi bi-geo-alt uk-margin-small-right"></i> Destinos</a></li>
+                <li><a href="#"><i class="bi bi-house-door uk-margin-small-right"></i> Hospedaje</a></li>
+                <li><a href="#"><i class="bi bi-airplane uk-margin-small-right"></i> Transporte</a></li>
+                <li><a href="#"><i class="bi bi-journal uk-margin-small-right"></i> Turismo</a></li>
+                <li><a href="#"><i class="bi bi-compass uk-margin-small-right"></i> Experiencias</a></li>
+                <li><a href="#"><i class="bi bi-person uk-margin-small-right"></i> Inicio de sesión</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Sección de Selección de Tipo de Viaje -->
+    <section id="travel-search" class="travel-section">
+        <div class="travel-selector">
+            <button id="viaje-redondo" class="travel-option active" data-type="roundtrip">
+                Viaje redondo
+            </button>
+            <button id="viaje-sencillo" class="travel-option" data-type="oneway">
+                Viaje sencillo
+            </button>
+            <button id="multidestino" class="travel-option" data-type="multidest">
+                Multidestino
+            </button>
+            <!-- Dropdown personalizado con UIkit -->
+            <div class="uk-inline uk-width-1-3">
+                <button class="uk-button uk-button-default uk-border-rounded uk-width-1-1" type="button">
+                    Económica
+                    <span uk-icon="icon: triangle-down"></span>
+                </button>
+                <div uk-dropdown="mode: click; pos: bottom-justify">
+                    <ul class="uk-list uk-list-divider">
+                        <li class="dropdown-option" data-value="economica">Económica</li>
+                        <li class="dropdown-option" data-value="business">Business</li>
+                        <li class="dropdown-option" data-value="premium">Premium</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Barras de búsqueda dinámicas -->
+        <div id="viaje-redondo-bar" class="search-bar active" data-type="roundtrip">
+            <div class="search-input">
+                <i class="icon-location"></i>
+                <input type="text" placeholder="Origen">
+            </div>
+            <div class="search-input">
+                <i class="icon-location"></i>
+                <input type="text" placeholder="Destino">
+            </div>
+            <div class="search-input">
+                <i class="icon-calendar"></i>
+                <input type="date" placeholder="Fecha ida">
+            </div>
+            <div class="search-input">
+                <i class="icon-calendar"></i>
+                <input type="date" placeholder="Fecha vuelta">
+            </div>
+            <button class="search-button">Buscar</button>
+        </div>
+
+        <div id="viaje-sencillo-bar" class="search-bar hidden" data-type="oneway">
+            <div class="search-input">
+                <i class="icon-location"></i>
+                <input type="text" placeholder="Origen">
+            </div>
+            <div class="search-input">
+                <i class="icon-location"></i>
+                <input type="text" placeholder="Destino">
+            </div>
+            <div class="search-input">
+                <i class="icon-calendar"></i>
+                <input type="date" placeholder="Fecha">
+            </div>
+            <button class="search-button">Buscar</button>
+        </div>
+
+        <div id="multidestino-bar" class="search-bar hidden" data-type="multidest">
+            <div id="multidestino-container">
+                <div class="flight-section">
+                    <div class="search-input">
+                        <i class="icon-location"></i>
+                        <input type="text" placeholder="Origen">
+                    </div>
+                    <div class="search-input">
+                        <i class="icon-location"></i>
+                        <input type="text" placeholder="Destino">
+                    </div>
+                    <div class="search-input">
+                        <i class="icon-calendar"></i>
+                        <input type="date" placeholder="Fecha">
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="add-flight-btn" class="add-flight">+ Agregar vuelo</a>
+            <button class="search-button">Buscar</button>
+        </div>
+    </section>
+
+    <!--Ofertas especiales-->
+    <section class="special-offers uk-section">
+        <div class="uk-container">
+            <div class="offers-container uk-flex uk-flex-middle uk-flex-between">
+                <!-- Columna de texto -->
+                <div class="text-column">
+                    <h2 class="section-title">Ofertas especiales</h2>
+                    <p class="section-subtitle">Viaja más, por menos</p>
+                    <p class="offer-description">
+                        Nuestros destinos más populares están esperándote con promociones imperdibles que no querrás
+                        dejar pasar.
+                        Disfruta de vuelos, hospedaje y experiencias a precios reducidos, seleccionados especialmente
+                        para que tu próxima
+                        aventura sea accesible y memorable.
+                    </p>
+                    <button class="button-yellow">Explorar</button>
+                </div>
+
+                <!-- Cuadrícula de imágenes -->
+                <div class="image-grid">
+                    <img src="src/images/img1.jpg" alt="Oferta 1" class="offer-image">
+                    <img src="src/images/img2.jpg" alt="Oferta 2" class="offer-image">
+                    <img src="src/images/img3.jpg" alt="Oferta 3" class="offer-image">
+                    <img src="src/images/img4.jpg" alt="Oferta 4" class="offer-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Sección de caracteristicas -->
+    <section class="features uk-section">
+        <div class="uk-container">
+            <h2 class="section-title">Por qué elegir Xplora</h2>
+            <div class="features-grid">
+                <!-- Característica 1 -->
+                <div class="feature-item">
+                    <img src="src/images/icons/icon1.svg" alt="Icono fácil de usar" class="feature-icon">
+                    <h3 class="feature-title">Fácil de usar</h3>
+                    <p class="feature-description">Encuentra y reserva tus destinos favoritos en pocos pasos.</p>
+                </div>
+                <!-- Característica 2 -->
+                <div class="feature-item">
+                    <img src="src/images/icons/icon2.svg" alt="Icono reservas rápidas" class="feature-icon">
+                    <h3 class="feature-title">Reservas rápidas</h3>
+                    <p class="feature-description">Ahorra tiempo con un sistema de reservas eficiente y seguro.</p>
+                </div>
+                <!-- Característica 3 -->
+                <div class="feature-item">
+                    <img src="src/images/icons/icon3.svg" alt="Icono destinos exclusivos" class="feature-icon">
+                    <h3 class="feature-title">Destinos exclusivos</h3>
+                    <p class="feature-description">Descubre experiencias únicas y lugares espectaculares.</p>
+                </div>
+                <!-- Característica 4 -->
+                <div class="feature-item">
+                    <img src="src/images/icons/icon4.svg" alt="Icono soporte 24/7" class="feature-icon">
+                    <h3 class="feature-title">Soporte 24/7</h3>
+                    <p class="feature-description">Estamos aquí para ayudarte en cualquier momento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clients" class="clients">
+        <div class="uk-container">
+            <h2 class="section-title">Nuestros Asociados</h2>
+            <div class="swiper clients-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="src/images/clients/client1.jpg" alt="Cliente 1" class="client-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/clients/client2.jpg" alt="Cliente 2" class="client-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/clients/client3.jpg" alt="Cliente 3" class="client-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/clients/client4.jpg" alt="Cliente 4" class="client-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/clients/client5.jpg" alt="Cliente 5" class="client-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/clients/client6.jpg" alt="Cliente 6" class="client-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/clients/client7.jpg" alt="Cliente 7" class="client-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/clients/client8.jpg" alt="Cliente 8" class="client-logo">
+                    </div>
+                </div>
+                <!-- Pagination for Swiper -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="custom-carousel">
+        <div class="carousel-track">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+                <img src="src/images/img1.jpg" alt="Transporte" class="carousel-image" />
+                <div class="carousel-content">
+                    <h2>Transporte</h2>
+                    <p>Reserva vuelos, trenes o renta de autos. Viajar nunca fue tan fácil. Compara precios y
+                        disponibilidad en todo el mundo.</p>
+                    <ul>
+                        <li>Busca y compara vuelos</li>
+                        <li>Encuentra opciones de transporte locales</li>
+                        <li>Aprovecha descuentos en alquiler de autos</li>
+                    </ul>
+                    <button class="btn-explore" onclick="window.location.href='transporte.html'">Explorar</button>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+                <img src="src/images/img2.jpg" alt="Turismo" class="carousel-image" />
+                <div class="carousel-content">
+                    <h2>Turismo</h2>
+                    <p>Explora destinos únicos y aprovecha descuentos exclusivos. Compara precios y descubre nuevas
+                        aventuras.</p>
+                    <ul>
+                        <li>Descubre destinos únicos</li>
+                        <li>Compara paquetes turísticos</li>
+                        <li>Accede a experiencias personalizadas</li>
+                    </ul>
+                    <button class="btn-explore" onclick="window.location.href='turismo.html'">Explorar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation -->
+        <button class="carousel-nav prev">&#8249;</button>
+        <button class="carousel-nav next">&#8250;</button>
+        <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="uk-section uk-section-secondary uk-padding-small">
+        <div class="uk-container uk-text-center">
+            <p>&copy; 2024 Xplora. Todos los derechos reservados.</p>
+            <div class="uk-flex uk-flex-center">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

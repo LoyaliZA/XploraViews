@@ -1271,9 +1271,11 @@ select.uk-form-width-xsmall {
   border-color: #999;
 }
 .uk-button-primary {
-  background-color: #ffa85c;
-  color: #fff;
-  border: 1px solid transparent;
+  background-color: #FFA85C;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
 }
 .uk-button-primary:hover {
   background-color: #F06D35;
@@ -1662,9 +1664,14 @@ select.uk-form-width-xsmall {
   box-sizing: border-box;
   transition: box-shadow 0.1s ease-in-out;
 }
+.uk-card img {
+  border-radius: 10px; /* Bordes redondeados */
+  height: 300px; /* Tamaño uniforme */
+  object-fit: cover; /* Mantiene proporción */
+}
 .uk-card-body {
-  display: flow-root;
-  padding: 30px 30px;
+  text-align: center;
+    padding: 20px;
 }
 .uk-card-header {
   display: flow-root;
@@ -1692,7 +1699,7 @@ select.uk-form-width-xsmall {
 }
 .uk-card-title {
   font-size: 1.5rem;
-  line-height: 1.4;
+    color: #FF6F61;
 }
 .uk-card-badge {
   position: absolute;
